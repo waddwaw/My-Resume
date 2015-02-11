@@ -1,0 +1,92 @@
+{
+    "name": "张秋怡",
+    "job_description": ["前端工程师", "软件工程师"],
+    "contact": {
+        "phone": "13824481874",
+        "mail": "joyeec9h3@gmail.com",
+        "others": [
+            {
+                "type": "wechat",
+                "id": "1284876460",
+                "qrcode": "url_to_qr_img"
+            },
+            {
+                "type": "sinaweibo",
+                "id": "sysu_joyee",
+                "url": "http://weibo.com/2930876843"
+            },
+            {
+                "type": "github",
+                "id": "joyeecheung"
+            }
+        ]
+    },
+    "education": [
+        {
+            "type": "undergraduate",
+            "name": "中山大学",
+            "major": "软件工程",
+            "start": "2012",
+            "end": "2016",
+            "honor": [
+                "2012 - 2013 学年度校三等奖学金",
+                "2013 - 2014 学年度校一等奖学金"
+            ]
+        }
+    ],
+    "language": [
+        {
+            "type": "english",
+            "certificate": [
+                {
+                    "type": "CET-4",
+                    "full": "750",
+                    "score": "679"
+                },
+                {
+                    "type": "CET-6",
+                    "full": "750",
+                    "score": "616"
+                }
+            ],
+            "description": [
+                "能流畅阅读英文专业书籍、论文、文档、博客、技术新闻及其他资料",
+                "可无字幕观看 MOOC 课程、开发者大会视频",
+                "能够在英文邮件列表、技术论坛、Stackoverflow 上正常交流"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "type": "intership",
+            "techtype": "nodejs",
+            "place": "东西科技",
+            "start": "2014.03",
+            "end": "2014.06",
+            "job_description": "Node.js 开发",
+            "job": [
+                "开发、维护基于微信公众平台 API 的 Express.js 中间件",
+                "使用 Mocha & Chai 及 CoffeeScript 编写单元测试",
+                "结合 MongoDB 开发 Demo",
+                "对服务器进行简单的压力测试与分析"
+            ],
+            "stack": ["nodejs", "expressjs", "mocha", "chai", "coffeescript", "mongodb"]
+        },
+        {
+            "type": "intership",
+            "techtype": "frontend",
+            "place": "埃森哲",
+            "start": "2014.08",
+            "end": "2014.09",
+            "job_description": "前端开发",
+            "job": [
+                "参与某企业内部办公系统的前端开发，基于 jQuery UI 、Bootstrap 完成业务需求，实现 UI 与数据交互",
+                "解决遗留的 bug 及浏览器兼容问题（IE8+）",
+                "使用 Grunt 及 Less 完成皮肤开发",
+                "重构部分前端代码"
+            ],
+            "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+            "compatibility": "IE8+"
+        }
+    ]
+}
