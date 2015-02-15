@@ -4,22 +4,19 @@
     "contact": {
         "phone": "13824481874",
         "mail": "joyeec9h3@gmail.com",
-        "miscellaneous": [
-            {
-                "type": "wechat",
-                "id": "1284876460",
-                "qrcode": "url_to_qr_img"
-            },
-            {
-                "type": "sinaweibo",
-                "id": "sysu_joyee",
-                "url": "http://weibo.com/2930876843"
-            },
-            {
-                "type": "github",
-                "id": "joyeecheung"
-            }
-        ]
+        "wechat": {
+            "id": "1284876460",
+            "qrcode": "url_to_qr_img"
+        },
+        "sinaweibo": {
+            "type": ,
+            "id": "sysu_joyee",
+            "url": "http://weibo.com/2930876843"
+        },
+        "github": {
+            "type": "github",
+            "id": "joyeecheung"
+        }
     },
     "education": [
         {
