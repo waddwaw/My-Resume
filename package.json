@@ -9,6 +9,7 @@
   "author": "Joyee Cheung",
   "license": "MIT",
   "dependencies": {
+    "gulp-less": "^3.0.0",
     "jade": "^1.9.2",
     "less": "^2.4.0"
   }
