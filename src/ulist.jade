@@ -1,8 +1,0 @@
-- function highlight(str) {
--   return str.replace(/`(.+?)`/g, '<span class="highlight">$1</span>')
-- }
-
-mixin ulist(list, listClass, itemClass)
-  ul(class=listClass)
-    each item in list
-      li(class=itemClass)!= highlight(item)

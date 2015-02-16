@@ -3,18 +3,19 @@ extends ./layout.jade
 include ./mixins/contact.jade
 
 block title
-  title 张秋怡 - 个人简历
+  title= resume_title
 
 block header
   header
     .title
-      h1 name
-      h2 job_description
-    .contact
-      +phone(contact.phone)
-      +mail(contact.mail)
-      +sinaweibo(contact.sinaweibo)
-      +github(contact.github)
+      h1= name
+      h2= job_description
+    address.contact
+      ul
+        +phone(contact.phone)
+        +mail(contact.mail)
+        +sinaweibo(contact.sinaweibo)
+        +github(contact.github)
     .header-qrcode
       +qrcode(contact.wechat)
 
@@ -24,12 +25,9 @@ block content
     block education
     block language
     block experience
-    block skills
+    block skill
 
 
 block footer
-  footer
-    ul.links
-      each link in links
-        li
-          a.link(href=link.url) link.type
+  block links
+  block repo
