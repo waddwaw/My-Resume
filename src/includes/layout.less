@@ -54,13 +54,12 @@
 }
 
 .row {
-    @gutter: @grid-gutter-width;
-    margin-left: (@gutter / -2);
-    margin-right: (@gutter / -2);
+    margin-left: (@grid-gutter-width / -2);
+    margin-right: (@grid-gutter-width / -2);
     overflow: hidden;
 }
 
 .float-container() {
-    overflow: hidden;
+    overflow-y: hidden;
     zoom: 1;
 }

@@ -20,6 +20,21 @@
   transform: translate(0, 0); // ensures no half-pixel rendering in firefox
 }
 
+.fa-icon(@icon-size, @icon-padding, @bgcolor, @ftcolor : white) {
+    .fa();
+    background-color: @bgcolor;
+    color: @ftcolor;
+    border-radius: @border-radius-circle;
+    float: left;
+    width: @icon-size;
+    height: @icon-size;
+    padding: @icon-padding;
+    text-align: center;
+    line-height: @icon-size;
+    font-size: @icon-size - @icon-padding;
+}
+
+
 .fa-li() {
   .fa();
   padding-right: @padding-large-horizontal;
@@ -29,3 +44,5 @@
 @fa-var-envelope: "\f0e0";
 @fa-var-github-square: "\f092";
 @fa-var-weibo: "\f18a";
+@fa-var-rss: "\f09e";
+@fa-var-book: "\f02d";

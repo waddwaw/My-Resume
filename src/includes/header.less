@@ -1,4 +1,4 @@
-@qrcode-size: 110px;
+@qrcode-size: 130px;
 
 .header-qrcode .qrcode-img {
     width: @qrcode-size;
@@ -7,6 +7,8 @@
 
 header {
     .float-container();
+    border-bottom: 2px solid @text-color;
+    padding-bottom: @padding-small-vertical;
 }
 
 .title {
@@ -15,17 +17,21 @@ header {
 }
 
 .title h1, .title h2 {
-    margin: @padding-small-vertical;
-    padding: @padding-small-vertical;
+    margin: @padding-small-vertical 0;
     line-height: 1;
+    text-align: right;
 }
 
 .title h1 {
+    padding: @padding-small-vertical 0;
     float: right;
 }
 
 .title h2 {
+    padding: @padding-small-vertical @padding-base-vertical;
     clear: right;
+    color: @bright-color;
+    font-weight: normal;
 }
 
 .header-qrcode {
@@ -35,12 +41,13 @@ header {
 header .contact {
     float: left;
     margin: 0;
+    padding-left: @padding-large-horizontal;
 }
 
 header .contact li {
     list-style-type: none;
     font-style: normal;
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: @font-size-medium;
 }
 
@@ -62,4 +69,9 @@ header .contact li {
 .contact-sinaweibo::before {
     .fa-li();
     content: @fa-var-weibo;
+}
+
+.contact-blog::before {
+    .fa-li();
+    content: @fa-var-rss;
 }
