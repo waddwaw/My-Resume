@@ -1,0 +1,38 @@
+section {
+    margin-top: @padding-huge-vertical;
+}
+
+.sec-title-wrapper {
+    .float-container();
+}
+
+.sec-title {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 @padding-small-horizontal;
+    .float-container();
+}
+
+.fa-sec-icon() {
+    .fa-icon(@sec-icon-size, @sec-icon-padding, @text-color);
+}
+
+.sec-title-wrapper::before {
+    .fa-sec-icon();
+    content: @fa-var-github-square;
+}
+
+.sec-title-zh {
+    font-size: @font-size-large;
+    float: left;
+    font-weight: bold;
+}
+
+.sec-title-en {
+    font-size: @font-size-base;
+    float: left;
+    clear: left;
+    color: @bright-color;
+    font-variant: small-caps;
+    font-weight: bold;
+}

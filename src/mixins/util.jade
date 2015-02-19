@@ -13,17 +13,28 @@ mixin github(data)
   li.contact-github
     a(href="https://github.com/" + data.id)= "https://github.com/" + data.id
 
+mixin blog(data)
+  li.contact-blog
+    a(href=data.url)= data.url
+
 mixin qrcode(data)
   img.qrcode-img(src=data.qrcode, alt=data.id)
 
 mixin section(sec_class, zh_title, en_title, timeline)
   section(class=sec_class)
-    h3.sec-title
-      span.sec-title-zh= zh_title
-      span.sec-title-en= en_title
-    div(class=timeline ? "sec-content sec-content-timeline": "sec-content")
-      if block
-        block
+    .sec-title-wrapper
+      h3.sec-title
+        span.sec-title-zh= zh_title
+        span.sec-title-en= en_title
+    if timeline
+      .timeline-wrapper
+        .sec-content.timeline
+          if block
+            block
+    else
+      .sec-content
+        if block
+          block
 
 
 mixin certificate(cert)

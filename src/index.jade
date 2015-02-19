@@ -4,15 +4,16 @@ include ./mixins/util.jade
 block education
   +section("education", "教育经历", "Education", true)
     each item in education
-      h4(class="timeline-education-" + item.type)
-        span.timeline-education-time #{item.start} ~ #{item.end}
-      .education-name
-        = item.name
-      ul.education-description
+      .timeline-item
+        h4(class="timeline-education-" + item.type)
+          span.timeline-education-time #{item.start} ~ #{item.end}
+        .education-name
+          = item.name
+        ul.education-description
 
-        li.education-major= item.major + education_type[item.type]
-        each honor in item.honor
-          li.education-honor!= highlight(honor)
+          li.education-major= item.major + education_type[item.type]
+          each honor in item.honor
+            li.education-honor!= highlight(honor)
 
 
 block language
@@ -28,29 +29,30 @@ block language
 block experience
   +section("experience", "项目与工作经验", "Experience", true)
     each item in experience
-      h4(class="timeline-experience-" + item.type)
-        span.timeline-experience-place= item.place
-        span.timeline-experience-time #{item.start} ~ #{item.end}
-      .experience-name
-        = item.name
-      ul.experience-description
-        each desc in item.description
-          li!= highlight(desc)
+      .timeline-item
+        h4(class="timeline-experience-" + item.type)
+          span.timeline-experience-place= item.place
+          span.timeline-experience-time #{item.start} ~ #{item.end}
+        .experience-name
+          = item.name
+        ul.experience-description
+          each desc in item.description
+            li!= highlight(desc)
 
 block skills
   +section("skills", "技能", "Skills", true)
     each item in skills
-      h4(class="timeline-skills-" + item.type)
-        span.timeline-skills-type= skill_type[item.type]
-      +#{"skills_" + item.type}(item)
+      .timeline-item
+        h4(class="timeline-skills-" + item.type)
+          span.timeline-skills-type= skill_type[item.type]
+        +#{"skills_" + item.type}(item)
 
 
 block links
-  footer
     ul.links
       each link in links
-        li
-          a.link(href=link.url)= link_type[link.type]
+        li.link
+          a(href=link.url)= link_type[link.type]
 
 block repo
   #[a(href=repo) This resume] is created with gulp, less and jade.

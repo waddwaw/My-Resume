@@ -8,19 +8,19 @@ block style
   link(rel='stylesheet', href="index.css")
 
 block header
-  header
+  header.row
     .header-qrcode
       +qrcode(contact.wechat)
     .title
       h1= name
-      h2= job_description
+      h2= job_description.join("/")
     address
       ul.contact
         +phone(contact.phone)
         +email(contact.email)
         +github(contact.github)
+        +blog(contact.blog)
         +sinaweibo(contact.sinaweibo)
-
 
 
 block content
@@ -34,5 +34,6 @@ block content
 
 
 block footer
-  block links
-  block repo
+  footer.row
+    block links
+    block repo
