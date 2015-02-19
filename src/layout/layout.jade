@@ -4,8 +4,9 @@ html
     meta(charset='utf-8')
     block title
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href="/style/bundle.css")
+    block style
   body
-    block header
-    block content
-    block footer
+    .container
+      block header
+      block content
+      block footer

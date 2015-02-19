@@ -4,27 +4,33 @@ include ../mixins/util.jade
 block title
   title= resume_title
 
+block style
+  link(rel='stylesheet', href="index.css")
+
 block header
   header
+    .header-qrcode
+      +qrcode(contact.wechat)
     .title
       h1= name
       h2= job_description
-    address.contact
-      ul
+    address
+      ul.contact
         +phone(contact.phone)
         +email(contact.email)
         +github(contact.github)
         +sinaweibo(contact.sinaweibo)
-    .header-qrcode
-      +qrcode(contact.wechat)
+
 
 
 block content
-  .content
-    block education
-    block language
-    block experience
-    block skills
+  .content.row
+    .column-5.first
+      block education
+      block language
+      block experience
+    .column-7.last
+      block skills
 
 
 block footer

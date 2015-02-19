@@ -1,0 +1,65 @@
+@qrcode-size: 110px;
+
+.header-qrcode .qrcode-img {
+    width: @qrcode-size;
+    height: @qrcode-size;
+}
+
+header {
+    .float-container();
+}
+
+.title {
+    float: right;
+    .float-container();
+}
+
+.title h1, .title h2 {
+    margin: @padding-small-vertical;
+    padding: @padding-small-vertical;
+    line-height: 1;
+}
+
+.title h1 {
+    float: right;
+}
+
+.title h2 {
+    clear: right;
+}
+
+.header-qrcode {
+    float: left;
+}
+
+header .contact {
+    float: left;
+    margin: 0;
+}
+
+header .contact li {
+    list-style-type: none;
+    font-style: normal;
+    line-height: 1.5;
+    font-size: @font-size-medium;
+}
+
+.contact-phone::before {
+    .fa-li();
+    content: @fa-var-phone;
+}
+
+.contact-email::before {
+    .fa-li();
+    content: @fa-var-envelope;
+}
+
+.contact-github::before {
+    .fa-li();
+    content: @fa-var-github-square;
+}
+
+.contact-sinaweibo::before {
+    .fa-li();
+    content: @fa-var-weibo;
+}

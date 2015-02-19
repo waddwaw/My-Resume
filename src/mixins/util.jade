@@ -14,7 +14,7 @@ mixin github(data)
     a(href="https://github.com/" + data.id)= "https://github.com/" + data.id
 
 mixin qrcode(data)
-  img(src=data.qrcode, alt=data.id)
+  img.qrcode-img(src=data.qrcode, alt=data.id)
 
 mixin section(sec_class, zh_title, en_title, timeline)
   section(class=sec_class)
