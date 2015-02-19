@@ -1,7 +1,5 @@
-extends ./resume-layout.jade
+extends ./layout/resume-layout.jade
 include ./mixins/util.jade
-
-- var education_type = {"undergraduate": "（本科）"}
 
 block education
   +section("education", "教育经历", "Education", true)
@@ -11,6 +9,7 @@ block education
       .education-name
         = item.name
       ul.education-description
+
         li.education-major= item.major + education_type[item.type]
         each honor in item.honor
           li.education-honor!= highlight(honor)
@@ -39,7 +38,11 @@ block experience
           li!= highlight(desc)
 
 block skills
-
+  +section("skills", "技能", "Skills", true)
+    each item in skills
+      h4(class="timeline-skills-" + item.type)
+        span.timeline-skills-type= skill_type[item.type]
+      +#{"skills_" + item.type}(item)
 
 
 block links
@@ -47,7 +50,7 @@ block links
     ul.links
       each link in links
         li
-          a.link(href=link.url) link.type
+          a.link(href=link.url)= link_type[link.type]
 
 block repo
   #[a(href=repo) This resume] is created with gulp, less and jade.

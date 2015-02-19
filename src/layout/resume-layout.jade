@@ -1,6 +1,5 @@
 extends ./layout.jade
-
-include ./mixins/contact.jade
+include ../mixins/util.jade
 
 block title
   title= resume_title
@@ -13,9 +12,9 @@ block header
     address.contact
       ul
         +phone(contact.phone)
-        +mail(contact.mail)
-        +sinaweibo(contact.sinaweibo)
+        +email(contact.email)
         +github(contact.github)
+        +sinaweibo(contact.sinaweibo)
     .header-qrcode
       +qrcode(contact.wechat)
 
@@ -25,7 +24,7 @@ block content
     block education
     block language
     block experience
-    block skill
+    block skills
 
 
 block footer

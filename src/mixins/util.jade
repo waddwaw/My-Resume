@@ -1,0 +1,58 @@
+mixin phone(number)
+  li.contact-phone= number
+
+mixin email(addr)
+  li.contact-email
+    a(href="mailto://" + addr)= addr
+
+mixin sinaweibo(data)
+  li.contact-sinaweibo
+    a(href=data.url)= data.id
+
+mixin github(data)
+  li.contact-github
+    a(href="https://github.com/" + data.id)= "https://github.com/" + data.id
+
+mixin qrcode(data)
+  img(src=data.qrcode, alt=data.id)
+
+mixin section(sec_class, zh_title, en_title, timeline)
+  section(class=sec_class)
+    h3.sec-title
+      span.sec-title-zh= zh_title
+      span.sec-title-en= en_title
+    div(class=timeline ? "sec-content sec-content-timeline": "sec-content")
+      if block
+        block
+
+
+mixin certificate(cert)
+  .language-cert
+    .language-cert-type= cert.type
+    .language-cert-score
+      .language-cert-bar(class="progress-"+Math.floor(cert.score / cert.full * 100))
+        span.language-cert-number= cert.score
+
+
+mixin skills_basic(item)
+  ul.skills_description
+    each skill in item.item
+      li.skills_item
+        h5.skills_item_summary= skill.summary
+        ul.skills_item_description
+          each desc in skill.description
+            li!= highlight(desc)
+
+
+mixin skills_frontend(item)
+  +skills_basic(item)
+
+
+mixin skills_backend(item)
+  +skills_basic(item)
+
+
+mixin skills_miscellaneous(item)
+    ul.skills_item_description
+      each desc in item.item
+        li!= highlight(desc)
