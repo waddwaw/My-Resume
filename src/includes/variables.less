@@ -11,6 +11,7 @@
 @font-family-serif:      Georgia, "Times New Roman", Times, serif;
 
 @font-size-base:  16px;
+@font-size-huge: @font-size-base * 2;  // 32px
 @font-size-large: @font-size-base * 1.25;  // 20px
 @font-size-medium: @font-size-base * 1.125;  // 18px
 @font-size-small: @font-size-base * 0.875; // 14px
@@ -117,12 +118,12 @@
 
 //== Section
 @sec-icon-size: 36px;
-@sec-icon-padding: 6px;
+@sec-icon-padding: 8px;
 
 
 //== Timeline
 @timeline-icon-overlap: (@sec-icon-size + @sec-icon-padding) / 2 + 10px;
-@timeline-icon-radius: (@sec-icon-size + @sec-icon-padding) / 2;
+@timeline-icon-radius: (@sec-icon-size) / 2 + @sec-icon-padding;
 @timeline-item-size: 26px;
 @timeline-item-padding: 6px;
 @timeline-end-size: 14px;

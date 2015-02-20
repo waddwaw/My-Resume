@@ -4,9 +4,9 @@ include ./mixins/util.jade
 block education
   +section("education", "教育经历", "Education", true)
     each item in education
-      .timeline-item
-        h4(class="timeline-education-" + item.type)
-          span.timeline-education-time #{item.start} ~ #{item.end}
+      .timeline-item(class="education-" + item.type)
+        h4
+          span.education-time #{item.start} ~ #{item.end}
         .education-name
           = item.name
         ul.education-description
@@ -29,10 +29,10 @@ block language
 block experience
   +section("experience", "项目与工作经验", "Experience", true)
     each item in experience
-      .timeline-item
-        h4(class="timeline-experience-" + item.type)
-          span.timeline-experience-place= item.place
-          span.timeline-experience-time #{item.start} ~ #{item.end}
+      .timeline-item(class="experience-" + item.type)
+        h4
+          span.experience-place= item.place
+          span.experience-time #{item.start} ~ #{item.end}
         .experience-name
           = item.name
         ul.experience-description
@@ -42,9 +42,9 @@ block experience
 block skills
   +section("skills", "技能", "Skills", true)
     each item in skills
-      .timeline-item
-        h4(class="timeline-skills-" + item.type)
-          span.timeline-skills-type= skill_type[item.type]
+      .timeline-item(class="skills-" + item.type)
+        h4
+          span.skills-type= skill_type[item.type]
         +#{"skills_" + item.type}(item)
 
 

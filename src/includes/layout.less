@@ -24,6 +24,10 @@
   }
 }
 
+.main {
+    padding: @padding-container-vertical @padding-container-horizontal;
+}
+
 .loop-grid-columns(@index) when (@index >= 0) {
     .calc-grid-column(@index);
     // next iteration

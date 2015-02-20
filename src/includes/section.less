@@ -1,3 +1,8 @@
+.fa-sec-icon(@content) {
+    .fa-icon(@sec-icon-size, @sec-icon-padding, @text-color);
+    content: @content;
+}
+
 section {
     margin-top: @padding-huge-vertical;
 }
@@ -13,15 +18,6 @@ section {
     .float-container();
 }
 
-.fa-sec-icon() {
-    .fa-icon(@sec-icon-size, @sec-icon-padding, @text-color);
-}
-
-.sec-title-wrapper::before {
-    .fa-sec-icon();
-    content: @fa-var-github-square;
-}
-
 .sec-title-zh {
     font-size: @font-size-large;
     float: left;
@@ -35,4 +31,14 @@ section {
     color: @bright-color;
     font-variant: small-caps;
     font-weight: bold;
+}
+
+.sec-title-wrapper::before {
+    .fa-sec-icon(@fa-var-github-square);  // catch-all
+}
+
+.set-section-icon(@section-name, @content) {
+    .@{section-name} .sec-title-wrapper::before {
+        content: @content;
+    }
 }

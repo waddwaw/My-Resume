@@ -11,7 +11,6 @@
 }
 
 .fa() {
-  display: inline-block;
   font-family: FontAwesome; // shortening font declaration
   font-size: inherit; // can't have font-size inherit on line above, so need to override
   text-rendering: auto; // optimizelegibility throws things off #1094
@@ -20,18 +19,22 @@
   transform: translate(0, 0); // ensures no half-pixel rendering in firefox
 }
 
-.fa-icon(@icon-size, @icon-padding, @bgcolor, @ftcolor : white) {
+.fa-icon(@size, @padding, @background, @foreground : white) {
     .fa();
-    background-color: @bgcolor;
-    color: @ftcolor;
+    background-color: @background;
+    color: @foreground;
+
     border-radius: @border-radius-circle;
     float: left;
-    width: @icon-size;
-    height: @icon-size;
-    padding: @icon-padding;
+
+    width: @size;
+    height: @size;
+    padding: @padding;
+
     text-align: center;
-    line-height: @icon-size;
-    font-size: @icon-size - @icon-padding;
+    line-height: @size;
+
+    font-size: @size - @padding;
 }
 
 
@@ -40,9 +43,11 @@
   padding-right: @padding-large-horizontal;
 }
 
-@fa-var-phone: "\f095";
-@fa-var-envelope: "\f0e0";
-@fa-var-github-square: "\f092";
-@fa-var-weibo: "\f18a";
-@fa-var-rss: "\f09e";
-@fa-var-book: "\f02d";
+.set-li-icon(@li-name, @content) {
+  .@{li-name}::before {
+    .fa();
+    content: @content;
+    width: @padding-base-horizontal + @font-size-base;
+    display: inline-block;
+  }
+}

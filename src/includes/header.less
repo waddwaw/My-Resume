@@ -38,6 +38,10 @@ header {
     float: left;
 }
 
+address {
+    .float-container();
+}
+
 header .contact {
     float: left;
     margin: 0;
@@ -51,27 +55,8 @@ header .contact li {
     font-size: @font-size-medium;
 }
 
-.contact-phone::before {
-    .fa-li();
-    content: @fa-var-phone;
-}
-
-.contact-email::before {
-    .fa-li();
-    content: @fa-var-envelope;
-}
-
-.contact-github::before {
-    .fa-li();
-    content: @fa-var-github-square;
-}
-
-.contact-sinaweibo::before {
-    .fa-li();
-    content: @fa-var-weibo;
-}
-
-.contact-blog::before {
-    .fa-li();
-    content: @fa-var-rss;
-}
+.set-li-icon(contact-phone, @fa-var-phone);
+.set-li-icon(contact-email, @fa-var-envelope);
+.set-li-icon(contact-github, @fa-var-github-square);
+.set-li-icon(contact-sinaweibo, @fa-var-weibo);
+.set-li-icon(contact-blog, @fa-var-rss);

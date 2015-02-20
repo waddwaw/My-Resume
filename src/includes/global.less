@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    transition:  all 0.2s;
+    transition:  all 0.3s ease-out;
 
     &:link {
         color: @link-color;
@@ -22,6 +22,7 @@ a {
 body {
     color: @text-color;
     background-color: @bg-color;
+    font-family: @font-family-sans-serif;
 }
 
 
@@ -37,6 +38,7 @@ h6 { font-size: @font-size-h6; }
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.2);
 }
 
-.main {
-    padding: @padding-container-vertical @padding-container-horizontal;
+strong {
+    font-weight: bold;
+    color: @bright-color;
 }
