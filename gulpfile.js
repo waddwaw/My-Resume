@@ -8,7 +8,7 @@ var deploy = require('gulp-gh-pages');
 
 // Jade to html
 gulp.task('jade', function() {
-  return gulp.src('./src/*.jade')
+  return gulp.src('./src/jade/index.jade')
     .pipe(jade({
       locals: ch_locals
     }))
@@ -18,9 +18,10 @@ gulp.task('jade', function() {
 
 // less to css
 gulp.task('less', function() {
-  return gulp.src('./src/index.less')
+  return gulp.src('./src/less/index.less')
     .pipe(less({
-      paths: [path.join(__dirname, 'src', 'includes')]
+      paths: [path.join(__dirname, 'src', 'less', 'includes'),
+              path.join(__dirname, 'src', 'less', 'components')]
     }))
     .pipe(gulp.dest('./dist/'))
     .pipe(livereload());
