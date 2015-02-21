@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Joyee Cheung",
+  "author": "Joyee Cheung <joyeec9h3@gmail.com>",
   "license": "MIT",
+  "repository" : {
+    "type": "git",
+    "url": "git://github.com/joyeecheung/resume.git"
+  },
   "dependencies": {
     "gulp": "^3.8.11",
     "gulp-gh-pages": "^0.4.0",
