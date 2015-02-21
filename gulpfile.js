@@ -2,7 +2,6 @@ var jade = require('gulp-jade');
 var gulp = require('gulp');
 var less = require('gulp-less');
 var livereload = require('gulp-livereload');
-var ch_locals = require('./ch_locals.js');
 var path = require('path');
 var deploy = require('gulp-gh-pages');
 
@@ -10,7 +9,7 @@ var deploy = require('gulp-gh-pages');
 gulp.task('jade', function() {
   return gulp.src('./src/jade/index.jade')
     .pipe(jade({
-      locals: ch_locals
+      locals: require('./ch_locals.js')
     }))
     .pipe(gulp.dest('./dist/'))
     .pipe(livereload());
@@ -37,7 +36,7 @@ gulp.task('static', function() {
 
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch(['./src/**/*.jade', './resume.json'], ['jade']);
+  gulp.watch(['./src/**/*.jade', './resume.json', './ch_locals.js'], ['jade']);
   gulp.watch('./src/**/*.less', ['less']);
   gulp.watch('./resume.json', ['jade']);
 });

@@ -38,21 +38,21 @@ mixin section(sec_class, zh_title, en_title, timeline)
 
 
 mixin certificate(cert)
-  .language-cert
+  li.language-cert
     .language-cert-type= cert.type
-    .language-cert-score
-      .language-cert-bar(class="progress-"+Math.floor(cert.score / cert.full * 100))
-        span.language-cert-number= cert.score
+    .progress.language-cert-score
+      .progress-bar(style="width: " + Math.floor(cert.score / cert.full * 100) + "%;")
+        span.progress-label= cert.score
 
 
 mixin skills_basic(item)
-  ul.skills_description
+  ul.skills-description
     each skill in item.item
-      li.skills_item
-        h5.skills_item_summary= skill.summary
-        ul.skills_item_description
+      li.skills-item
+        h5.skills-item-summary!= highlight(skill.summary)
+        ul.skills-item-description
           each desc in skill.description
-            li!= highlight(desc)
+            li.skills-item-desc-li!= highlight(desc)
 
 
 mixin skills_frontend(item)
@@ -64,6 +64,6 @@ mixin skills_backend(item)
 
 
 mixin skills_miscellaneous(item)
-    ul.skills_item_description
+    ul.skills-item-description
       each desc in item.item
-        li!= highlight(desc)
+        li.skills-item-desc-li!= highlight(desc)

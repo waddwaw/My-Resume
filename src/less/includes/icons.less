@@ -44,10 +44,15 @@
 }
 
 .set-li-icon(@li-name, @content) {
+  .@{li-name} {
+    padding-left: @padding-base-horizontal + @font-size-base;
+  }
+
   .@{li-name}::before {
     .fa();
     content: @content;
     width: @padding-base-horizontal + @font-size-base;
+    margin-left: -@padding-base-horizontal - @font-size-base;
     display: inline-block;
   }
 }

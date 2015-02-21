@@ -22,9 +22,12 @@
 .timeline {
     padding-top: @timeline-icon-overlap + @timeline-item-size / 2;
     padding-left: @timeline-item-size;
-    padding-bottom: @timeline-end-size / 2;
     border-left: @timeline-line-width solid @text-color;
     margin-left: @timeline-icon-radius;
+}
+
+.timeline-item {
+    padding-bottom: @timeline-end-size;
 }
 
 .timeline-item h4 {
@@ -32,8 +35,9 @@
     padding: @timeline-item-padding/2 @timeline-item-size;
     color: white;
     background-color: @text-color;
-    border-radius: 6px;
+    border-radius: @border-radius-large;
     font-weight: normal;
+    .float-container();
 }
 
 .timeline-item::before {

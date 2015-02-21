@@ -28,6 +28,16 @@
     padding: @padding-container-vertical @padding-container-horizontal;
 }
 
+.column {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left: (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+    float: left;
+}
+
 .loop-grid-columns(@index) when (@index >= 0) {
     .calc-grid-column(@index);
     // next iteration
@@ -37,13 +47,6 @@
 .calc-grid-column(@index) {
     .column-@{index} {
         width: percentage((@index / @grid-columns));
-         position: relative;
-        // Prevent columns from collapsing when empty
-        min-height: 1px;
-        // Inner gutter via padding
-        padding-left: (@grid-gutter-width / 2);
-        padding-right: (@grid-gutter-width / 2);
-        float: left;
     }
 }
 

@@ -19,11 +19,12 @@ block education
 block language
   +section("language", "语言水平", "Language", false)
     each lang in language
-      each cert in lang.certificate
-        +certificate(cert)
+      ul.language-certificates
+        each cert in lang.certificate
+          +certificate(cert)
       ul.language-description
         each desc in lang.description
-          li= desc
+          li.language-desc-item= desc
 
 
 block experience
@@ -34,10 +35,10 @@ block experience
           span.experience-place= item.place
           span.experience-time #{item.start} ~ #{item.end}
         .experience-name
-          = item.name
+          = item.name + experience_type[item.type]
         ul.experience-description
           each desc in item.description
-            li!= highlight(desc)
+            li.experience-task!= highlight(desc)
 
 block skills
   +section("skills", "技能", "Skills", true)
@@ -55,4 +56,4 @@ block links
           a(href=link.url)= link_type[link.type]
 
 block repo
-  #[a(href=repo) This resume] is created with gulp, less and jade.
+  #[a(href=repo) This resume] is created with Gulp, Less and Jade.
