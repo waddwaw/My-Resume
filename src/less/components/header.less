@@ -13,23 +13,24 @@ header {
 
 .title {
     float: right;
-    .float-container();
+    text-align: right;
+    @media (max-width: @screen-xs-max) {
+      float: none;
+      text-align: center;
+    }
 }
 
 .title h1, .title h2 {
     margin: @padding-small-vertical 0;
     line-height: 1;
-    text-align: right;
 }
 
 .title h1 {
     padding: @padding-small-vertical 0;
-    float: right;
 }
 
 .title h2 {
     padding: @padding-small-vertical @padding-base-vertical;
-    clear: right;
     color: @bright-color;
     font-weight: normal;
 }
@@ -46,6 +47,10 @@ header .contact {
     float: left;
     margin: 0;
     padding-left: @padding-large-horizontal;
+    @media (max-width: @screen-xs-max) {
+      float: none;
+      margin-top: @padding-large-vertical;
+    }
 }
 
 header .contact li {
@@ -53,6 +58,7 @@ header .contact li {
     font-style: normal;
     line-height: 1.4;
     font-size: @font-size-medium;
+    word-break: break-all;
 }
 
 .set-li-icon(contact-phone, @fa-var-phone);
@@ -60,3 +66,4 @@ header .contact li {
 .set-li-icon(contact-github, @fa-var-github-square);
 .set-li-icon(contact-sinaweibo, @fa-var-weibo);
 .set-li-icon(contact-blog, @fa-var-rss);
+.set-li-icon(contact-wechat, @fa-var-wechat);

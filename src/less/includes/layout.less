@@ -26,6 +26,9 @@
 
 .main {
     padding: @padding-container-vertical @padding-container-horizontal;
+    @media (max-width: @screen-xs-max) {
+      padding: @padding-large-vertical @padding-large-horizontal;
+    }
 }
 
 .column {
@@ -47,6 +50,24 @@
 .calc-grid-column(@index) {
     .column-@{index} {
         width: percentage((@index / @grid-columns));
+    }
+}
+
+.calc-grid-column(@index) when (@index > @grid-columns-breakpoint) {
+    .column-@{index} {
+        @media (max-width: @grid-float-breakpoint) {
+          width: 100%;
+          float: none;
+          padding: 0;
+        }
+    }
+}
+
+.calc-grid-column(@index) when (@index <= @grid-columns-breakpoint) {
+    .column-@{index} {
+        @media (max-width: @grid-float-breakpoint) {
+          width: percentage((@index / @grid-columns-breakpoint));
+        }
     }
 }
 

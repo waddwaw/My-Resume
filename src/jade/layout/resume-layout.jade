@@ -10,7 +10,7 @@ block style
 block header
   header.row
     .header-qrcode
-      +qrcode(contact.wechat)
+      +responsive("qrcode", contact.wechat, "invisible-lt-sm")
     .title
       h1= name
       h2= job_description.join("/")
@@ -21,7 +21,7 @@ block header
         +github(contact.github)
         +blog(contact.blog)
         +sinaweibo(contact.sinaweibo)
-
+        +responsive("wechat", contact.wechat, "visible-lt-sm")
 
 block content
   .content.row

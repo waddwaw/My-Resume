@@ -1,24 +1,30 @@
 mixin phone(number)
-  li.contact-phone= number
+  li.contact-phone&attributes(attributes)= number
 
 mixin email(addr)
-  li.contact-email
+  li.contact-email&attributes(attributes)
     a(href="mailto://" + addr)= addr
 
 mixin sinaweibo(data)
-  li.contact-sinaweibo
+  li.contact-sinaweibo&attributes(attributes)
     a(href=data.url)= data.id
 
 mixin github(data)
-  li.contact-github
+  li.contact-github&attributes(attributes)
     a(href="https://github.com/" + data.id)= "https://github.com/" + data.id
 
 mixin blog(data)
-  li.contact-blog
+  li.contact-blog&attributes(attributes)
     a(href=data.url)= data.url
 
 mixin qrcode(data)
-  img.qrcode-img(src=data.qrcode, alt=data.id)
+  img.qrcode-img(src=data.qrcode, alt=data.id)&attributes(attributes)
+
+mixin wechat(data)
+  li.contact-wechat&attributes(attributes)= data.id
+
+mixin responsive(mixin_name, data, res_class)
+  +#{mixin_name}(data)(class=res_class)
 
 mixin section(sec_class, zh_title, en_title, timeline)
   section(class=sec_class)
@@ -52,7 +58,8 @@ mixin skills_basic(item)
         h5.skills-item-summary!= highlight(skill.summary)
         ul.skills-item-description
           each desc in skill.description
-            li.skills-item-desc-li!= highlight(desc)
+            li.skills-item-desc-li
+              span!= highlight(desc)
 
 
 mixin skills_frontend(item)
@@ -66,4 +73,5 @@ mixin skills_backend(item)
 mixin skills_miscellaneous(item)
     ul.skills-item-description
       each desc in item.item
-        li.skills-item-desc-li!= highlight(desc)
+        li.skills-item-desc-li
+          span!= highlight(desc)

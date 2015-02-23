@@ -1,11 +1,28 @@
 aside {
     position: fixed;
     right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
+    .vertically-middle(fixed);
+
+    @media (max-width: @screen-xs-max) {
+      position: relative;
+      display: table;
+      width: 100%;
+      right: auto;
+      top: 0;
+      transform: none;
+      .float-container();
+    }
 }
 
-aside li {
+aside .links {
+    margin: 0;
+    padding: 0;
+    @media (max-width: @screen-xs-max) {
+      display: table-row;
+    }
+}
+
+aside .link {
     list-style-type: none;
     margin-top: @padding-base-vertical;
     background-color: fade(black, 80%);
@@ -16,7 +33,16 @@ aside li {
     &:hover, &:active {
         background-color: fade(@bright-color, 80%);
     }
+
+    @media (max-width: @screen-xs-max) {
+      display: table-cell;
+      background-color: @text-color;
+      border-radius: 0;
+      text-align: center;
+    }
 }
+
+
 
 aside a {
     width: 100%;
