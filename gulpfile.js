@@ -1,9 +1,9 @@
-var jade = require('gulp-jade');
 var gulp = require('gulp');
+var jade = require('gulp-jade');
 var less = require('gulp-less');
 var connect = require('gulp-connect');
-var path = require('path');
 var deploy = require('gulp-gh-pages');
+var path = require('path');
 
 // Jade to html
 gulp.task('jade', function() {
@@ -35,7 +35,8 @@ gulp.task('connect', ['build'], function() {
   connect.server({
     root: 'dist',
     port: 8000,
-    livereload: true
+    livereload: true,
+    fallback: "index.html"
   });
 });
 
