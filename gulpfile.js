@@ -1,7 +1,7 @@
 var jade = require('gulp-jade');
 var gulp = require('gulp');
 var less = require('gulp-less');
-var livereload = require('gulp-livereload');
+var connect = require('gulp-connect');
 var path = require('path');
 var deploy = require('gulp-gh-pages');
 
@@ -11,8 +11,7 @@ gulp.task('jade', function() {
     .pipe(jade({
       locals: require('./ch_locals.js')
     }))
-    .pipe(gulp.dest('./dist/'))
-    .pipe(livereload());
+    .pipe(gulp.dest('./dist/'));
 });
 
 // less to css
@@ -22,28 +21,35 @@ gulp.task('less', function() {
       paths: [path.join(__dirname, 'src', 'less', 'includes'),
               path.join(__dirname, 'src', 'less', 'components')]
     }))
-    .pipe(gulp.dest('./dist/'))
-    .pipe(livereload());
+    .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('static', function() {
   return gulp.src('./static/**/*', {
       base: 'static'
     })
-    .pipe(gulp.dest('./dist/static/'))
-    .pipe(livereload());
+    .pipe(gulp.dest('./dist/static/'));
+});
+
+gulp.task('connect', ['build'], function() {
+  connect.server({
+    root: 'dist',
+    port: 8000,
+    livereload: true
+  });
 });
 
 gulp.task('watch', function() {
-  livereload.listen();
   gulp.watch(['./src/**/*.jade', './resume.json', './ch_locals.js'], ['jade']);
   gulp.watch('./src/**/*.less', ['less']);
   gulp.watch('./resume.json', ['jade']);
 });
 
-gulp.task('deploy', function() {
+gulp.task('build', ['jade', 'less', 'static']);
+
+gulp.task('deploy', ['build'], function() {
   return gulp.src('./dist/**/*')
     .pipe(deploy());
 });
 
-gulp.task('default', ['jade', 'less', 'static', 'watch']);
+gulp.task('default', ['connect', 'watch']);

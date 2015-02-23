@@ -6,9 +6,14 @@
 
 1. 执行 `npm install` 安装所需依赖
 2. 将个人数据填入 `resume.json`
-2. 运行 `gulp`，在 `dist` 目录下生成的 `index.html` 即为简历入口
-3. 运行 `gulp deploy` 可发布到当前 git 远程仓库中 origin 对应的 Github Pages
+3. 运行 `gulp build`，在 `dist` 目录下生成的 `index.html` 即为简历入口
+4. 运行 `gulp deploy` 可发布到当前 git 远程仓库中 origin 对应的 Github Pages（origin 需为 SSH 链接）
 
+## Develop
+
+需要使用 Live Reload 端口（35729）及 8000 端口。
+
+运行 `gulp`，访问 `http://localhost:8000`。
 
 ## LICENSE
 
