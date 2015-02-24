@@ -5,9 +5,8 @@ block education
   +section("education", true)
     each item in education
       li.timeline-item(class="education-" + item.type)
-        .timeline-title-wrapper
-          h3.timeline-title
-            time.education-time #{item.start} ~ #{item.end}
+        h3.timeline-title
+          time.education-time #{item.start} ~ #{item.end}
         dl.education-description.timeline-content
           dt.education-name= item.name
           dd.education-major= item.major + education_type[item.type]
@@ -28,10 +27,9 @@ block experience
   +section("experience", true)
     each item in experience
       li.timeline-item(class="experience-" + item.type)
-        .timeline-title-wrapper
-          h3.timeline-title
-            span.experience-place= item.place
-            time.experience-time #{item.start} ~ #{item.end}
+        h3.timeline-title
+          span.experience-place= item.place
+          time.experience-time #{item.start} ~ #{item.end}
         dl.experience-description.timeline-content
           dt.experience-name= item.name + experience_type[item.type]
           each desc in item.description
@@ -41,9 +39,8 @@ block skills
   +section("skills", true)
     each item in skills
       li.timeline-item(class="skills-" + item.type)
-        .timeline-title-wrapper
-          h3.timeline-title
-            span.skills-type= skill_type[item.type]
+        h3.timeline-title
+          span.skills-type= skill_type[item.type]
         +#{"skills_" + item.type}(item)
 
 

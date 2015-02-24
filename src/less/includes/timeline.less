@@ -23,20 +23,25 @@
     padding-top: @timeline-icon-overlap + @timeline-item-size / 2;
     padding-left: @timeline-item-size;
     border-left: @timeline-line-width solid @text-color;
-    margin-left: @timeline-icon-radius;
+    margin: 0 0 0 @timeline-icon-radius;
+}
+
+.timeline li {
+    list-style-type: none;
 }
 
 .timeline-item {
     padding-bottom: @timeline-end-size;
 }
 
-.timeline-item h4 {
+.timeline-title {
     margin: 0 0 0 -@timeline-item-size;
     padding: @timeline-item-padding/2 @timeline-item-size;
     color: white;
     background-color: @text-color;
     border-radius: @border-radius-large;
     font-weight: normal;
+    font-size: @font-size-base;
     .float-container();
 }
 
