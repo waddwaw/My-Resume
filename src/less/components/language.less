@@ -7,10 +7,9 @@
     padding: 0;
 }
 
-.language-cert {
+.language-cert-wrapper {
     font-size: @font-size-large;
     margin-bottom: @padding-small-vertical;
-    list-style-type: none;
     .float-container();
 }
 
@@ -19,12 +18,15 @@
     font-weight: bold;
 }
 
-.language-cert .progress {
+.language-cert-wrapper .progress {
     float: right;
-}
-
-.language-cert .progress {
     width: 80%;
+    margin: 0;
+
+    @media (max-width: @screen-xs-max) {
+        float: none;
+        width: 100%;
+    }
 }
 
 .language-description {
@@ -32,7 +34,7 @@
     margin: @padding-large-vertical 0;
 }
 
-.language-description li {
+.language-desc-item {
     list-style-type: none;
     line-height: 1.4;
 }

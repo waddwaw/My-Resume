@@ -2,50 +2,48 @@ extends ./layout/resume-layout.jade
 include ./mixins/util.jade
 
 block education
-  +section("education", "教育经历", "Education", true)
+  +section("education", true)
     each item in education
-      .timeline-item(class="education-" + item.type)
-        h4
-          span.education-time #{item.start} ~ #{item.end}
-        .education-name
-          = item.name
-        ul.education-description
-
-          li.education-major= item.major + education_type[item.type]
+      li.timeline-item(class="education-" + item.type)
+        .timeline-title-wrapper
+          h3.timeline-title
+            time.education-time #{item.start} ~ #{item.end}
+        dl.education-description.timeline-content
+          dt.education-name= item.name
+          dd.education-major= item.major + education_type[item.type]
           each honor in item.honor
-            li.education-honor!= highlight(honor)
+            dd.education-honor!= highlight(honor)
 
 
 block language
-  +section("language", "语言水平", "Language", false)
+  +section("language", false)
     each lang in language
-      ul.language-certificates
-        each cert in lang.certificate
-          +certificate(cert)
+      +certificate(lang.certificate)
       ul.language-description
         each desc in lang.description
           li.language-desc-item= desc
 
 
 block experience
-  +section("experience", "项目与工作经验", "Experience", true)
+  +section("experience", true)
     each item in experience
-      .timeline-item(class="experience-" + item.type)
-        h4
-          span.experience-place= item.place
-          span.experience-time #{item.start} ~ #{item.end}
-        .experience-name
-          = item.name + experience_type[item.type]
-        ul.experience-description
+      li.timeline-item(class="experience-" + item.type)
+        .timeline-title-wrapper
+          h3.timeline-title
+            span.experience-place= item.place
+            time.experience-time #{item.start} ~ #{item.end}
+        dl.experience-description.timeline-content
+          dt.experience-name= item.name + experience_type[item.type]
           each desc in item.description
-            li.experience-task!= highlight(desc)
+            dd.experience-task!= highlight(desc)
 
 block skills
-  +section("skills", "技能", "Skills", true)
+  +section("skills", true)
     each item in skills
-      .timeline-item(class="skills-" + item.type)
-        h4
-          span.skills-type= skill_type[item.type]
+      li.timeline-item(class="skills-" + item.type)
+        .timeline-title-wrapper
+          h3.timeline-title
+            span.skills-type= skill_type[item.type]
         +#{"skills_" + item.type}(item)
 
 

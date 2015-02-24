@@ -26,15 +26,15 @@ mixin wechat(data)
 mixin responsive(mixin_name, data, res_class)
   +#{mixin_name}(data)(class=res_class)
 
-mixin section(sec_class, zh_title, en_title, timeline)
+mixin section(sec_class, timeline)
   section(class=sec_class)
     .sec-title-wrapper
       h3.sec-title
-        span.sec-title-zh= zh_title
-        span.sec-title-en= en_title
+        span.sec-title-ch= section_names[sec_class].ch
+        span.sec-title-en= section_names[sec_class].en
     if timeline
       .timeline-wrapper
-        .sec-content.timeline
+        ul.sec-content.timeline
           if block
             block
     else
@@ -43,35 +43,35 @@ mixin section(sec_class, zh_title, en_title, timeline)
           block
 
 
-mixin certificate(cert)
-  li.language-cert
-    .language-cert-type= cert.type
-    .progress.language-cert-score
-      .progress-bar(style="width: " + Math.floor(cert.score / cert.full * 100) + "%;")
-        span.progress-label= cert.score
+mixin certificate(certificate)
+  dl.language-certificates
+    each cert in certificate
+      .language-cert-wrapper
+        dt.language-cert-type= cert.type
+        dd.progress.language-cert-score
+          .progress-bar(style="width: " + Math.floor(cert.score / cert.full * 100) + "%;")
+            span.progress-label= cert.score
 
 
 mixin skills_basic(item)
-  ul.skills-description
+  dl.skills-description.timeline-content
     each skill in item.item
-      li.skills-item
-        h5.skills-item-summary!= highlight(skill.summary)
-        ul.skills-item-description
-          each desc in skill.description
-            li.skills-item-desc-li
-              span!= highlight(desc)
+      dt.skills-item-summary!= highlight(skill.summary)
+      each desc in skill.description
+        dd.skills-item-description
+          span!= highlight(desc)
 
 
 mixin skills_frontend(item)
-  +skills_basic(item)
+  +skills_basic(item)(attributes)
 
 
 mixin skills_backend(item)
-  +skills_basic(item)
+  +skills_basic(item)(attributes)
 
 
 mixin skills_miscellaneous(item)
-    ul.skills-item-description
+    ul.skills-description.skills-miscellaneous.timeline-content
       each desc in item.item
-        li.skills-item-desc-li
+        li.skills-item-description
           span!= highlight(desc)
