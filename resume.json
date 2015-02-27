@@ -72,7 +72,7 @@
             "description": [
                 "能流畅阅读英文专业书籍、论文、文档、博客、技术新闻及其他资料",
                 "可无字幕观看 MOOC 课程、开发者大会视频",
-                "能够在英文邮件列表、技术论坛、Stackoverflow 上正常交流"
+                "能够在英文邮件列表、技术论坛、Stack Overflow 上正常交流"
             ]
         }
     ],
@@ -85,12 +85,12 @@
             "end": "2014.06",
             "name": "Node.js 开发",
             "description": [
-                "开发、维护基于微信公众平台 API 的 `Express.js 中间件`",
+                "开发、维护基于微信公众平台 API 的 `Express 中间件`",
                 "使用 `Mocha` & `Chai` 及 `CoffeeScript` 编写单元测试",
                 "结合 `MongoDB` 开发 Demo",
                 "对服务器进行简单的压力测试与分析"
             ],
-            "stack": ["nodejs", "expressjs", "mocha", "chai", "coffeescript", "mongodb"]
+            "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
         },
         {
             "type": "internship",
@@ -133,7 +133,7 @@
                     "summary": "熟悉 `DOM` / `BOM`",
                     "description": [
                         "了解原生 `DOM` 与 `BOM`，熟悉相关标准，能完成桌面 / 移动端前端组件与 `Ajax` 数据交互的开发",
-                        "阅读过 `Webkit` 源码中的部分实现，了解常见的浏览器`兼容性`问题及其解决方案"
+                        "阅读过 `WebKit` 源码中的部分实现，了解常见的浏览器`兼容性`问题及其解决方案"
                     ]
                 },
                 {
@@ -146,9 +146,9 @@
                 {
                     "summary": "其他",
                     "description": [
-                        "了解 `AngularJS` / `BackboneJS` 与前端 `MV*` 机制",
-                        "有 `SeaJS` / `RequireJS` / `Browserify` 使用经验",
-                        "有 `LESS` / `SASS` / `CoffeeScript` 使用经验",
+                        "了解 `AngularJS` / `Backbone.js` 与前端 `MV*` 机制",
+                        "有 `Sea.js` / `RequireJS` / `Browserify` 使用经验",
+                        "有 `Less` / `Sass` / `CoffeeScript` 使用经验",
                         "有 `Bower` / `Grunt` / `Gulp` 使用经验",
                         "熟悉常见的前端开发规范，了解基本的前端性能优化知识"
                     ]
@@ -161,7 +161,7 @@
                 {
                     "summary": "熟悉 `Node.js`",
                     "description": [
-                        "能够使用 `Node.js API` 或 `Express.js` / `Connect` 搭建简单的 Web Server，编写 `Express.js / Connect 中间件`",
+                        "能够使用 `Node.js API` 或 `Express` / `Connect` 搭建简单的 Web Server，编写 `Express / Connect 中间件`",
                         "了解异步 I/O 及事件驱动的服务器模型，了解常见的异步编程解决方案",
                         "熟悉 Node.js 社区常见工具（`Jade` / `Handlebars` 等）",
                         "能够使用 `Mocha` & `Chai` 编写单元测试"
@@ -181,10 +181,10 @@
             "type": "miscellaneous",
             "item": [
                 "两年 `Linux` 使用经验，熟悉常用命令，能编写简单的 `bash` 脚本",
-                "熟悉 `C` / `C++`，能编写简单的解释器、数据库引擎、加密算法及 `Node.js 扩展`，能阅读 Webkit、 V8、 libuv 与 nginx 的源代码",
+                "熟悉 `C` / `C++`，能编写简单的解释器、数据库引擎、加密算法及 `Node.js 扩展`，能阅读 WebKit、 V8、 libuv 与 nginx 的源代码",
                 "熟悉 `Python`，能够实现简单的爬虫、数据及图像处理工具、自动化脚本以及 Hadoop Streaming 分布式程序",
                 "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
-                "日常使用 `git`，`Vim` 与 `Sublime Text`",
+                "日常使用 `Git`，`Vim` 与 `Sublime Text`",
                 "能够使用 `LaTeX` 及 `Markdown` 进行写作",
                 "能够使用 `Photoshop` / `Illustrator` 完成简单的设计"
             ]
