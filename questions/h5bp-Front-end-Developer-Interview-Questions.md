@@ -246,12 +246,16 @@ var foo = "Hello";
 alert(foo + bar);
 ```
 
+The first alert is `Hello World`, the second will throw an error. In the IIFE, `foo` can be accessed since it is in the outer scope, so the first alert is the concatenation of the two strings, `Hello World`. But after the IIFE, `bar` is no longer accessible, because it is local to the IIFE. In effect, it is **not even declared** at that moment. Therefore the second alert, trying to access the undeclared `bar`, will throw an errror.
+
 *Question: What is the value of `foo.length`?*
 ```javascript
 var foo = [];
 foo.push(1);
 foo.push(2);
 ```
+
+`2`.
 
 #### Fun Questions:
 
