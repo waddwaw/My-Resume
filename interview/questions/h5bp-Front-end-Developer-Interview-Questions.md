@@ -1,9 +1,5 @@
 #Front-end Job Interview Questions
 
-This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
-
-**Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
-
 ## Table of Contents
 
   1. [General Questions](#general-questions)
@@ -14,13 +10,7 @@ This file contains a number of front-end interview questions that can be used wh
   1. [Coding Questions](#coding-questions)
   1. [Fun Questions](#fun-questions)
 
-## Getting Involved
-
-  1. [Contributors](#contributors)
-  1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
-  1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
-
-#### General Questions:
+### General Questions:
 
 * What did you learn yesterday/this week?
 * What excites or interests you about coding?
@@ -44,7 +34,7 @@ This file contains a number of front-end interview questions that can be used wh
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
 
-#### HTML Questions:
+### HTML Questions:
 
 * What does a `doctype` do?
 * What's the difference between standards mode and quirks mode?
