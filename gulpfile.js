@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var jade = require('gulp-jade');
 var less = require('gulp-less');
+var markdown = require('gulp-markdown');
 var connect = require('gulp-connect');
 var deploy = require('gulp-gh-pages');
 var path = require('path');
@@ -26,11 +27,29 @@ gulp.task('less', function() {
     .pipe(connect.reload());
 });
 
+// Static assets
 gulp.task('static', function() {
   return gulp.src('./static/**/*', {
       base: 'static'
     })
     .pipe(gulp.dest('./dist/static/'))
+    .pipe(connect.reload());
+});
+
+// Demos
+gulp.task('demo', function() {
+  return gulp.src('./interview/demo/**/*', {
+      base: './interview/demo'
+    })
+    .pipe(gulp.dest('./dist/demo/'))
+    .pipe(connect.reload());
+});
+
+// questions
+gulp.task('questions', function() {
+  return gulp.src('./interview/questions/**.md')
+    .pipe(markdown())
+    .pipe(gulp.dest('./dist/questions/'))
     .pipe(connect.reload());
 });
 
@@ -40,7 +59,7 @@ gulp.task('watch', function() {
   gulp.watch('./resume.json', ['jade']);
 });
 
-gulp.task('build', ['jade', 'less', 'static']);
+gulp.task('build', ['jade', 'less', 'static', 'demo', 'questions']);
 
 gulp.task('connect', ['build'], function() {
   connect.server({
