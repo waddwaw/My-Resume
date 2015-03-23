@@ -42,13 +42,23 @@
     border-radius: @border-radius-large;
     font-weight: normal;
     font-size: @font-size-base;
+    // hack: make floating boxes align vertically
+    line-height: @line-height-large;
     .float-container();
 }
 
 .timeline-item::before {
     .fa-timeline-icon(@fa-var-book);  //catch-all
+    position: absolute;
 }
 
+.timeline-content {
+    margin: 0;
+
+    @media (max-width: @screen-xs-max) {
+      margin-left: -@padding-small-horizontal;
+    }
+}
 
 .set-timeline-icon(@item-name, @content) {
     .@{item-name}.timeline-item::before {

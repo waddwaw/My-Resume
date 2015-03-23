@@ -3,32 +3,25 @@
 }
 
 // Centered container element
-.container-fixed(@gutter: @grid-gutter-width) {
+.container {
   margin-right: auto;
   margin-left: auto;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
-}
 
-.container {
-  .container-fixed();
+  padding: @padding-container-vertical @padding-container-horizontal;
+  @media (max-width: @screen-xs-max) {
+    padding: @padding-small-vertical @padding-small-horizontal @padding-container-horizontal @padding-small-horizontal;
+  }
 
   @media (min-width: @screen-sm-min) {
     width: @container-sm;
   }
+
   @media (min-width: @screen-md-min) {
     width: @container-md;
   }
   @media (min-width: @screen-lg-min) {
     width: @container-lg;
   }
-}
-
-main {
-    padding: @padding-container-vertical @padding-container-horizontal;
-    @media (max-width: @screen-xs-max) {
-      padding: @padding-large-vertical @padding-large-horizontal;
-    }
 }
 
 .column {
@@ -82,8 +75,8 @@ main {
 }
 
 .row {
-    margin-left: (@grid-gutter-width / -2);
-    margin-right: (@grid-gutter-width / -2);
+    margin-left: -0.1px;
+    margin-right: -0.1px;
     overflow: hidden;
 }
 
