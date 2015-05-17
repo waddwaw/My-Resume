@@ -18,6 +18,12 @@
     "gulp-gh-pages": "^0.4.0",
     "gulp-jade": "^1.0.0",
     "gulp-less": "^3.0.0",
-    "gulp-markdown": "^1.0.0"
+    "gulp-livereload": "^3.8.0",
+    "gulp-markdown": "^1.0.0",
+    "jade": "^1.9.2",
+    "st": "^0.5.3"
+  },
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.5.2"
   }
 }
