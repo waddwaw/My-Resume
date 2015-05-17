@@ -24,6 +24,8 @@
     "st": "^0.5.3"
   },
   "devDependencies": {
+    "gulp-layout": "0.0.3",
+    "gulp-load-plugins": "^0.10.0",
     "gulp-sourcemaps": "^1.5.2"
   }
 }
