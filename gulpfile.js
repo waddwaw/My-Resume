@@ -17,17 +17,7 @@ gulp.task('jade', function() {
 
 // less to css
 gulp.task('less', function() {
-  gulp.src('./src/less/questions.less')
-    .pipe(plugins.sourcemaps.init())
-    .pipe(plugins.less({
-      paths: [path.join(__dirname, 'src', 'less', 'includes'),
-              path.join(__dirname, 'src', 'less', 'components')]
-    }))
-    .pipe(plugins.sourcemaps.write())
-    .pipe(gulp.dest('./dist/questions/'))
-    .pipe(plugins.livereload());
-
-  gulp.src('./src/less/index.less')
+  return gulp.src('./src/less/index.less')
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.less({
       paths: [path.join(__dirname, 'src', 'less', 'includes'),
@@ -47,43 +37,14 @@ gulp.task('static', function() {
     .pipe(plugins.livereload());
 });
 
-// Demos
-gulp.task('demo', function() {
-  return gulp.src('./interview/demo/**/*', {
-      base: './interview/demo'
-    })
-    .pipe(gulp.dest('./dist/demo/'))
-    .pipe(plugins.livereload());
-});
-
-// questions
-gulp.task('questions', function() {
-  gulp.src('./node_modules/highlight.js/styles/tomorrow.css')
-    .pipe(gulp.dest('./dist/questions/'));
-
-  gulp.src('./interview/questions/**.md')
-    .pipe(plugins.markdown({
-      highlight: function (code) {
-        return require('highlight.js').highlightAuto(code).value;
-      }
-    }))
-    .pipe(plugins.layout({
-      layout: './src/jade/layout/questions-layout.jade'
-    }))
-    .pipe(gulp.dest('./dist/questions/'))
-    .pipe(plugins.livereload());
-});
-
 gulp.task('watch', ['server'], function() {
   plugins.livereload.listen({ basePath: 'dist' });
-  gulp.watch('./interview/demo/**/*', ['demo']);
-  gulp.watch('./interview/questions/**/*', ['questions']);
   gulp.watch(['./src/**/*.jade', './resume.json', './ch_locals.js'], ['jade']);
   gulp.watch('./src/**/*.less', ['less']);
   gulp.watch('./resume.json', ['jade']);
 });
 
-gulp.task('build', ['jade', 'less', 'static', 'demo', 'questions']);
+gulp.task('build', ['jade', 'less', 'static']);
 
 gulp.task('server', ['build'], function(done) {
   http.createServer(
