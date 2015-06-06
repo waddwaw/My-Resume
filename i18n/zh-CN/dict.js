@@ -1,7 +1,3 @@
-function highlight(str) {
-    return str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<strong>$1</strong>');
-}
-
 module.exports = {
     experience_type: {
         "internship": "（实习）"
@@ -38,11 +34,5 @@ module.exports = {
             "en": "Skills"
         }
     },
-    highlight: highlight,
     lt_ie8_comment: "你正在使用 IE8 或更老的古董浏览器，还是快升级或者换浏览器吧~"
 };
-
-var resume_data = require('./resume.json');
-for (var item in resume_data) {
-    module.exports[item] = resume_data[item];
-}
