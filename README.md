@@ -1,19 +1,27 @@
 ## My Resume
 
-这是一个在线简历生成器，使用 Gulp, Less 和 Jade 写成，支持用 Gulp 发布到 Github Pages。
+Read resume data from a JSON file and generate a static web page. GitHub Pages support included.
+
+Written with Gulp, Less, and Jade.
 
 ## Build
 
-1. 执行 `npm install` 安装所需依赖
-2. 将个人数据填入 `resume.json`
-3. 运行 `gulp build`，在 `dist` 目录下生成的 `index.html` 即为简历入口
-4. 运行 `gulp deploy` 可发布到当前 git 远程仓库中 origin 对应的 Github Pages（origin 需为 SSH 链接）
+1. Run `npm install` to install the dependencies.
+2. Fill your resume data in `resume.json`.
+3. Run `gulp build` to generate the static web page(`dist/index.html`).
+4. Run `gulp server` and visit `http://localhost:8000` if you want to see it hosted locally(make sure the port 8000 is not taken).
+
+## Deploy to GitHub Pages
+
+1. Set up the SSH git remote `origin` for the project.
+2. After building the web page, run `gulp deploy`.
+3. Everything under `dist` will be pushed to the remote repo's `gh-pages` branch.
 
 ## Develop
 
-需要使用 Live Reload 端口（35729）及 8000 端口。
-
-运行 `gulp`，访问 `http://localhost:8000`。
+1. Make sure port 35729(for livereload) and 8000(for the local server) are available.
+2. Run `gulp`, then visit `http://localhost:8000`.
+3. Start development!
 
 ## LICENSE
 

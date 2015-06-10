@@ -12,9 +12,9 @@ function highlight(str) {
 
 // Jade to html
 gulp.task('jade', function() {
-  var locals = require('./i18n/zh-CN/dict.js');
-
   var resume_data = require('./resume.json');
+  var locals = require('./i18n/' + resume_data.data_lang
+                        + '/dict.js');
   for (var item in resume_data) {
     locals[item] = resume_data[item];
   }
