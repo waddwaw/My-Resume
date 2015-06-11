@@ -26,7 +26,6 @@ aside .link {
     list-style-type: none;
     margin-top: @padding-base-vertical;
     background-color: fade(black, 80%);
-    padding: @padding-large-vertical;
     border-radius: 5px 0 0 5px;
 
     transition:  all 0.3s ease-out;
@@ -46,6 +45,9 @@ aside .link {
 
 aside a {
     width: 100%;
+    padding: @padding-large-vertical;
+    display: inline-block;
+
     &:link, &:visited, &:hover, &:active {
         color: white;
     }
