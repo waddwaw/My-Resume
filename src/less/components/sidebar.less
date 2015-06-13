@@ -1,6 +1,7 @@
 aside {
     position: fixed;
     right: 0;
+    z-index: 100;
     .vertically-middle(fixed);
 
     @media (max-width: @screen-xs-max) {
@@ -30,7 +31,7 @@ aside .link {
 
     transition:  all 0.3s ease-out;
     &:hover, &:active {
-        background-color: fade(@bright-color, 80%);
+        background-color: fade(black, 60%);
     }
 
     @media (max-width: @screen-xs-max) {

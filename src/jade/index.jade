@@ -28,12 +28,9 @@ block experience
     each item in experience
       li.timeline-item(class="experience-" + item.type)
         h3.timeline-title
-          span.experience-place= item.place
-          time.experience-time #{item.start} ~ #{item.end}
+          +#{"experience_title_" + item.type}(item)
         dl.experience-description.timeline-content
-          dt.experience-name= item.name + experience_type[item.type]
-          each desc in item.description
-            dd.experience-task!= highlight(desc)
+          +#{"experience_content_" + item.type}(item)
 
 block skills
   +section("skills", true)

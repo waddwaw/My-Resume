@@ -56,3 +56,17 @@
     display: inline-block;
   }
 }
+
+.set-small-li-icon(@li-name, @content) {
+  .@{li-name} {
+    padding-left: @padding-small-horizontal + @font-size-small;
+  }
+
+  .@{li-name}::before {
+    .fa();
+    content: @content;
+    width: @padding-xs-horizontal + @font-size-small;
+    margin-left: -@padding-xs-horizontal - @font-size-small;
+    display: inline-block;
+  }
+}

@@ -74,10 +74,10 @@
     "end": "2014.06",
     "name": "Node.js 开发",
     "description": [
-      "开发、维护基于微信公众平台 API 的 `Express 中间件`",
-      "使用 `Mocha` & `Chai` 及 `CoffeeScript` 编写单元测试",
-      "结合 `MongoDB` 开发 Demo",
-      "对服务器进行简单的压力测试与分析"
+      "开发、维护封装微信公众平台 API 的 `Express 中间件`",
+      "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
+      "结合 `MongoDB` 开发微信公众平台 Demo",
+      "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
     ],
     "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
   }, {
@@ -88,13 +88,27 @@
     "end": "2014.09",
     "name": "前端开发",
     "description": [
-      "参与某企业内部办公系统的前端开发，基于 `jQuery UI` 、`Bootstrap` 完成业务需求，实现 UI 与数据交互",
+      "参与某企业内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
       "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
       "使用 `Grunt` 及 `Less` 完成皮肤开发",
       "重构部分前端代码"
     ],
     "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
     "compatibility": "IE8+"
+  }, {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "在线简历生成器",
+    "source": "https://github.com/joyeecheung/resume",
+    "demo": "http://joyeecheung.github.io/resume/",
+    "description": [
+      "这份在线简历的生成器",
+      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成样式",
+      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+    ],
+    "stack": ["jade", "less", "gulp"],
+    "compatibility": "IE9+"
   }],
   "skills": [{
     "type": "frontend",

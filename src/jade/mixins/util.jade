@@ -75,3 +75,33 @@ mixin skills_miscellaneous(item)
       each desc in item.item
         li.skills-item-description
           span!= highlight(desc)
+
+
+mixin experience_title_job(item)
+  span.experience-place= item.place
+  time.experience-time #{item.start} ~ #{item.end}
+
+mixin experience_content_job(item)
+  dt.experience-position= item.name + experience_type[item.type]
+  each desc in item.description
+    dd.experience-task!= highlight(desc)
+
+mixin experience_title_internship(item)
+  +experience_title_job(item)
+
+mixin experience_content_internship(item)
+  +experience_content_job(item)
+
+mixin experience_title_project(item)
+  span.experience-project-type= project_type[item.project_type]
+  span.experience-title-aside
+    if item.source
+      a.experience-project-link(href=item.source)= dict.source_code
+    if item.demo
+        a.experience-project-link(href=item.demo)= dict.demo
+
+mixin experience_content_project(item)
+
+  dt.experience-project-name= item.name
+  each desc in item.description
+    dd.experience-task!= highlight(desc)
