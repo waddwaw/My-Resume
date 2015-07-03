@@ -16,7 +16,7 @@ header {
     text-align: right;
     margin: 0;
 
-    @media (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-xs-max) {
       float: none;
       text-align: center;
     }
@@ -50,7 +50,7 @@ header .contact {
     float: left;
     margin: 0;
     padding-left: @padding-large-horizontal;
-    @media (max-width: @screen-xs-max) {
+    @media print or (max-width: @screen-xs-max) {
       float: none;
       margin-top: @padding-large-vertical;
       padding-left: @padding-xs-horizontal;

@@ -6,22 +6,6 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-
-  padding: @padding-container-vertical @padding-container-horizontal;
-  @media (max-width: @screen-xs-max) {
-    padding: @padding-small-vertical @padding-small-horizontal @padding-container-horizontal @padding-small-horizontal;
-  }
-
-  @media (min-width: @screen-sm-min) {
-    width: @container-sm;
-  }
-
-  @media (min-width: @screen-md-min) {
-    width: @container-md;
-  }
-  @media (min-width: @screen-lg-min) {
-    width: @container-lg;
-  }
 }
 
 .column {
@@ -48,7 +32,7 @@
 
 .calc-grid-column(@index) when (@index > @grid-columns-breakpoint) {
     .column-@{index} {
-        @media (max-width: @grid-float-breakpoint) {
+        @media screen and (max-width: @grid-float-breakpoint) {
           width: 100%;
           float: none;
           padding: 0;
@@ -58,7 +42,7 @@
 
 .calc-grid-column(@index) when (@index <= @grid-columns-breakpoint) {
     .column-@{index} {
-        @media (max-width: @grid-float-breakpoint) {
+        @media print or (max-width: @grid-float-breakpoint) {
           width: percentage((@index / @grid-columns-breakpoint));
         }
     }

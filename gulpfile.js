@@ -24,6 +24,7 @@ function getLocals() {
 
 gulp.task('jade', function() {
   return gulp.src('./src/jade/index.jade')
+    .pipe(plugins.debug())
     .pipe(plugins.jade({
       locals: getLocals()
     }))
@@ -36,13 +37,15 @@ var lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
                 path.join(__dirname, 'src', 'less', 'components')];
 
 function less2css(srcPath, destPath, debug) {
-  if(debug) {
+  if(!debug) {
     return gulp.src(srcPath)
       .pipe(plugins.less({ paths: lessPath }))
+      .pipe(plugins.debug())
       .pipe(plugins.minifyCss({ compatibility: 'ie9' }))
       .pipe(gulp.dest(destPath));
   } else {
     return gulp.src(srcPath)
+      .pipe(plugins.debug())
       .pipe(plugins.sourcemaps.init())
       .pipe(plugins.less({ paths: lessPath }))
       .pipe(plugins.sourcemaps.write())
@@ -62,6 +65,8 @@ gulp.task('less-debug', function() {
 /************** Static assets **************/
 gulp.task('static', function() {
   return gulp.src('./static/**/*', { base: 'static' })
+    .pipe(plugins.changed('./dist/static/'))
+    .pipe(plugins.debug())
     .pipe(gulp.dest('./dist/static/'))
     .pipe(plugins.livereload());
 });
