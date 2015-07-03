@@ -61,9 +61,9 @@
       "score": "616"
     }],
     "description": [
-      "能流畅阅读英文专业书籍、论文、文档、博客、技术新闻及其他资料",
+      "能流畅阅读英文专业书籍、文档及其他资料",
       "可无字幕观看 MOOC 课程、开发者大会视频",
-      "能够在英文邮件列表、技术论坛、Stack Overflow 上正常交流"
+      "能够在英文邮件列表、Stack Overflow 等社区正常交流"
     ]
   }],
   "experience": [{
@@ -74,7 +74,7 @@
     "end": "2014.06",
     "name": "Node.js 开发",
     "description": [
-      "开发、维护封装微信公众平台 API 的 `Express 中间件`",
+      "开发并维护封装微信公众平台 API 的 `Express 中间件`",
       "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
       "结合 `MongoDB` 开发微信公众平台 Demo",
       "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
@@ -88,7 +88,7 @@
     "end": "2014.09",
     "name": "前端开发",
     "description": [
-      "参与某企业内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
+      "参与某集团内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
       "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
       "使用 `Grunt` 及 `Less` 完成皮肤开发",
       "重构部分前端代码"
@@ -99,82 +99,111 @@
     "type": "project",
     "techtype": "frontend",
     "project_type": "personal",
-    "name": "在线简历生成器",
+    "name": "Resume",
     "source": "https://github.com/joyeecheung/resume",
     "demo": "http://joyeecheung.github.io/resume/",
     "description": [
       "这份在线简历的生成器",
-      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成样式",
+      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成**响应式**样式",
       "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
     ],
     "stack": ["jade", "less", "gulp"],
     "compatibility": "IE9+"
+  }, {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "My Tech Diary",
+    "source": "https://github.com/joyeecheung/diary",
+    "demo": "http://joyeecheung.github.io/diary/",
+    "description": [
+      "一个技术日记站点生成器，可从 `git submodule` 中读取 `Markdown` 文件，生成静态站点",
+      "将按日期命名存放的 Markdown 文件转为 HTML 并对代码块进行语法高亮，结合 `Jade` 模板生成页面",
+      "以 `CSS4` 编写样式，用 `PostCSS` 转译到 CSS3",
+      "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
+      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  }, {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "Virtual Bookcase",
+    "source": "https://github.com/joyeecheung/virtual-bookcase",
+    "description": [
+      "基于 `Three.js` 实现的虚拟在线 3D 图书室，包含简单的场景、第一人称角色、图书的选取与交互",
+      "使用 `Express` 与 `MongoDB` 提供图书数据 API",
+      "使用 `RequireJS` 加载模块，`Grunt` 驱动工作流，`Web Worker` 优化图像处理"
+    ],
+    "stack": ["three.js", "mongodb", "express"],
+    "compatibility": "IE10+"
   }],
   "skills": [{
     "type": "frontend",
     "item": [{
-      "summary": "熟悉 `HTML` / `CSS`",
+      "summary": "`HTML` / `CSS`",
       "description": [
         "能够编写语义化的 `HTML`，模块化的 `CSS`，完成较复杂的布局",
-        "熟悉已标准化的 `HTML5` / `CSS3` 新特性",
-        "了解常见的浏览器`兼容性`问题及解决方案"
+        "熟悉已标准化的 `HTML5` / `CSS3` 新特性，关注 `CSS4` 的进展",
+        "了解常见的浏览器**兼容性**问题及解决方案"
       ]
     }, {
-      "summary": "熟悉 `JavaScript`",
+      "summary": "`ECMAScript`（`JavaScript`）",
       "description": [
-        "熟悉 `ECMAScript`(`JavaScript`)，对 JavaScript 引擎有一定的了解",
-        "熟悉`模块化`、`面向对象`的 JavaScript",
-        "对 `ECMAScript 6` 有较深入的了解，关注 `ECMAScript` 的未来进展"
+        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`及相关 **JIT** 技术有一定的了解",
+        "在合适的场景下乐于使用 `ECMAScript 6` 及相关后处理工具，关注 `ECMAScript` 的未来进展",
+        "了解 JavaScript 在浏览器环境中常见的**兼容性**问题及解决方案"
       ]
     }, {
-      "summary": "熟悉 `DOM` / `BOM`",
+      "summary": "`DOM` / `BOM` 及常见 `Web API`",
       "description": [
-        "了解原生 `DOM` 与 `BOM`，熟悉相关标准，能完成桌面 / 移动端前端组件与 `Ajax` 数据交互的开发",
-        "阅读过 `WebKit` 源码中的部分实现，了解常见的浏览器`兼容性`问题及其解决方案"
+        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），能完成桌面 / 移动端前端组件与 `AJAX` 数据交互的开发",
+        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` 等新 API 有一定的了解和使用经验",
+        "阅读过 `WebKit` / `Blink` 源码中的部分实现，了解常见的 Web API **兼容性**问题及其解决方案"
       ]
     }, {
-      "summary": "熟悉 `jQuery` / `jQuery UI` / `Bootstrap`",
+      "summary": "前端第三方库/框架",
       "description": [
-        "熟悉基本使用与扩展插件，能为项目进行定制",
-        "阅读过部分源代码，了解其设计思路与部分实现细节"
+        "使用 `Meteor` / `AngularJS` 编写过简单的 CRUD SPA，了解 `Backbone.js` / `React` 及前端 `MV*` 模型",
+        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码"
       ]
     }, {
-      "summary": "其他",
+      "summary": "前端工程实践",
       "description": [
-        "了解 `React` / `Backbone.js`，有 `Meteor` /`AngularJS` 的使用经验，了解前端 `MV*` 机制",
-        "有 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 使用经验",
-        "有 `Less` / `Sass` / `PostCSS` / `CoffeeScript` / `TypeScript` 使用经验",
-        "日常使用 `Grunt` / `Gulp`",
-        "熟悉常见的前端开发规范，了解基本的前端性能优化知识"
+        "在项目中使用过 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 等模块化解决方案",
+        "在项目中使用过 `Less` / `Sass` / `PostCSS` / `CoffeeScript` / `TypeScript` 等预处理/后处理工具",
+        "日常使用 `Grunt` 或 `Gulp` 改进工作流",
+        "掌握基本的前端性能优化知识与技巧，并能在项目中加以实践"
       ]
     }]
   }, {
     "type": "backend",
     "item": [{
-      "summary": "熟悉 `Node.js`",
+      "summary": "`Node.js`",
       "description": [
-        "能够使用 `Node.js API` 或 `Express` / `Connect` 搭建简单的 Web Server，编写 `Express / Connect 中间件`",
-        "了解异步 I/O 及事件驱动的服务器模型，了解常见的异步编程解决方案",
-        "熟悉 Node.js 社区常见工具（`Jade` / `Handlebars` 等）",
+        "能够使用 `Node.js API` 或 `Express` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
+        "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
+        "能编写简单的 `Express / Connect 中间件`",
         "能够使用 `Mocha` & `Chai` 编写单元测试"
       ]
     }, {
       "summary": "其他",
       "description": [
-        "能够使用 `Tornado`(`Python`) 搭建简单的 Web Server",
-        "了解 `HTTP`、 `TCP/IP`、 `WebSocket` 协议、 无线网络基础",
-        "了解 `MongoDB` / `Redis` / `MySQL`"
+        "使用 `Tornado`（`Python`） 搭建过简单的服务器",
+        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
+        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等网络协议"
       ]
     }]
   }, {
     "type": "miscellaneous",
     "item": [
-      "两年 `Linux` 使用经验，熟悉常用命令，能编写简单的 `bash` 脚本",
-      "熟悉 `C` / `C++`，能编写简单的解释器、数据库引擎、加密算法及 `Node.js 扩展`，能阅读 WebKit、 V8、 libuv 与 nginx 的源代码",
-      "熟悉 `Python`，能够实现简单的爬虫、数据及图像处理工具、自动化脚本以及 Hadoop Streaming 分布式程序",
+      "三年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
+      "熟悉多种平台与编译环境下的 `C` / `C++` 及其新标准，编写过简单的解释器、数据库引擎、3D 图形程序及 Node.js 扩展，能阅读 `WebKit` / `Blink、V8` 等常接触项目的源代码并加以利用",
+      "熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本、爬虫、机器学习算法及分布式程序（参见 GitHub）",
       "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
-      "日常使用 `Git`，`Vim` 与 `Sublime Text`",
-      "能够使用 `LaTeX` 及 `Markdown` 进行写作",
+      "能够使用 `LaTeX` 及 `Markdown` 编写得体的中英文文档或论文，具备良好的技术交流能力",
+      "日常使用 `Git` 与 `Sublime Text` / `Vim` 进行开发，也乐于尝试新工具",
       "能够使用 `Photoshop` / `Illustrator` 完成简单的设计"
     ]
   }]
