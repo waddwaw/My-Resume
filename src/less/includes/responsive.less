@@ -1,9 +1,8 @@
 .container { 
-  padding: @padding-container-vertical @padding-container-horizontal;
   margin-top: @padding-large-vertical;
 
   @media screen and (max-width: @screen-xs-max) {
-    padding: @padding-small-vertical @padding-small-horizontal @padding-container-horizontal @padding-small-horizontal;
+    padding: @padding-small-vertical 0;
     margin-top: 0;
   }
 
@@ -20,20 +19,43 @@
   }
 }
 
+header, .content {
+  padding: @padding-huge-vertical @padding-container-horizontal;
+}
+
+@media screen and (max-width: @screen-xs-max) {
+  header, .content {
+    padding: @padding-container-vertical @padding-small-horizontal;
+    margin-top: 0;
+    margin-bottom: @padding-small-vertical;
+  }
+}
 .invisible-lt-sm {
-    @media (min-width: @screen-md-min) {
+    @media screen and (min-width: @screen-md-min) {
         display: block;
     }
-    @media (max-width: @screen-sm-max) {
+    @media screen and (max-width: @screen-sm-max) {
         display: none;
     }
 }
 
 .visible-lt-sm {
-    @media (min-width: @screen-md-min) {
+    @media screen and (min-width: @screen-md-min) {
         display: none;
     }
-    @media (max-width: @screen-sm-max) {
+    @media screen and (max-width: @screen-sm-max) {
         display: block;
     }
 }
+
+.visible-print {
+  @media print {
+    display: block;
+  }
+}
+
+.invisible-print {
+  @media print {
+    display: none;
+  }
+} 

@@ -1,4 +1,4 @@
-@qrcode-size: 130px;
+@qrcode-size: 110px;
 
 .header-qrcode .qrcode-img {
     width: @qrcode-size;
@@ -7,8 +7,9 @@
 
 header {
     .float-container();
-    border-bottom: @border-divide;
     padding-bottom: @padding-small-vertical;
+    background-color: @text-color;
+    color: white;
 }
 
 .title {
@@ -29,11 +30,11 @@ header {
 
 .title h1 {
     padding: @padding-small-vertical 0;
+    color: @secondary-light-color;
 }
 
 .title h2 {
     padding: @padding-small-vertical @padding-base-vertical;
-    color: @bright-color;
     font-weight: normal;
 }
 
@@ -63,6 +64,14 @@ header .contact li {
     line-height: 1.4;
     font-size: @font-size-medium;
     word-break: break-all;
+}
+
+header a:link, header a:visited {
+    color: white;
+}
+
+header a:hover, header a:active {
+    color: @secondary-light-color;;
 }
 
 .set-li-icon(contact-phone, @fa-var-phone);
