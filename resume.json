@@ -90,12 +90,26 @@
     "description": [
       "参与某集团内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
       "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
-      "使用 `Grunt` 及 `Less` 完成皮肤开发",
-      "重构部分前端代码"
+      "使用 `Grunt` 及 `Less` 完成皮肤开发"
     ],
     "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
     "compatibility": "IE8+"
   }, {
+    "type": "internship",
+    "techtype": "frontend",
+    "place": "阿里巴巴 B2B-ICBU 数据应用部",
+    "start": "2015.07",
+    "end": "至今",
+    "name": "前端开发",
+    "description": [
+      "开发支持 i18n 的数据可视化组件",
+      "解决外部系统遗留的 bug 及浏览器兼容问题（`IE7+`）",
+      "使用 `SVG` 等技术开发内部系统前端组件"
+    ],
+    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+    "compatibility": "IE8+"
+  },
+  {
     "type": "project",
     "techtype": "frontend",
     "project_type": "personal",
@@ -117,8 +131,7 @@
     "source": "https://github.com/joyeecheung/diary",
     "demo": "http://joyeecheung.github.io/diary/",
     "description": [
-      "一个技术日记站点生成器，可从 `git submodule` 中读取 `Markdown` 文件，生成静态站点",
-      "将按日期命名存放的 Markdown 文件转为 HTML 并对代码块进行语法高亮，结合 `Jade` 模板生成页面",
+      "一个技术日记站点生成器，可从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
       "以 `CSS4` 编写样式，用 `PostCSS` 转译到 CSS3",
       "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
       "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
@@ -132,7 +145,7 @@
     "name": "Virtual Bookcase",
     "source": "https://github.com/joyeecheung/virtual-bookcase",
     "description": [
-      "基于 `Three.js` 实现的虚拟在线 3D 图书室，包含简单的场景、第一人称角色、图书的选取与交互",
+      "基于 `Three.js` 实现的 3D 虚拟图书室",
       "使用 `Express` 与 `MongoDB` 提供图书数据 API",
       "使用 `RequireJS` 加载模块，`Grunt` 驱动工作流，`Web Worker` 优化图像处理"
     ],
@@ -144,37 +157,31 @@
     "item": [{
       "summary": "`HTML` / `CSS`",
       "description": [
-        "能够编写语义化的 `HTML`，模块化的 `CSS`，完成较复杂的布局",
-        "熟悉已标准化的 `HTML5` / `CSS3` 新特性，关注 `CSS4` 的进展",
-        "了解常见的浏览器**兼容性**问题及解决方案"
+        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画",
+        "熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准"
       ]
     }, {
       "summary": "`ECMAScript`（`JavaScript`）",
       "description": [
-        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`及相关 **JIT** 技术有一定的了解",
-        "在合适的场景下乐于使用 `ECMAScript 6` 及相关后处理工具，关注 `ECMAScript` 的未来进展",
-        "了解 JavaScript 在浏览器环境中常见的**兼容性**问题及解决方案"
+        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`及相关 JIT 技术有一定的了解",
+        "了解 `ECMAScript` 新标准与相关后处理工具并能在项目中使用"
       ]
     }, {
       "summary": "`DOM` / `BOM` 及常见 `Web API`",
       "description": [
-        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），能完成桌面 / 移动端前端组件与 `AJAX` 数据交互的开发",
-        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` 等新 API 有一定的了解和使用经验",
+        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），有桌面 / 移动端前端组件的开发经验",
+        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` / `SVG` 等 API 有一定的使用经验",
         "阅读过 `WebKit` / `Blink` 源码中的部分实现，了解常见的 Web API **兼容性**问题及其解决方案"
-      ]
-    }, {
-      "summary": "前端第三方库/框架",
-      "description": [
-        "使用 `Meteor` / `AngularJS` 编写过简单的 CRUD SPA，了解 `Backbone.js` / `React` 及前端 `MV*` 模型",
-        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码"
       ]
     }, {
       "summary": "前端工程实践",
       "description": [
-        "在项目中使用过 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 等模块化解决方案",
+        "使用 `Meteor` / `AngularJS` / `Polymer` 编写过简单的 CRUD SPA，了解 `Backbone.js` / `React` 及前端 `MV*` 模型",
+        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码",
+        "在项目中使用过 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 等多种模块化解决方案",
         "在项目中使用过 `Less` / `Sass` / `PostCSS` / `CoffeeScript` / `TypeScript` 等预处理/后处理工具",
         "日常使用 `Grunt` 或 `Gulp` 改进工作流",
-        "掌握基本的前端性能优化知识与技巧，并能在项目中加以实践"
+        "掌握基本的前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践"
       ]
     }]
   }, {
@@ -184,15 +191,14 @@
       "description": [
         "能够使用 `Node.js API` 或 `Express` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
         "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-        "能编写简单的 `Express / Connect 中间件`",
-        "能够使用 `Mocha` & `Chai` 编写单元测试"
+        "能编写简单的 `Express / Connect 中间件`，使用 `Mocha` 与 `Chai` 编写单元测试"
       ]
     }, {
       "summary": "其他",
       "description": [
         "使用 `Tornado`（`Python`） 搭建过简单的服务器",
         "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等网络协议"
+        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
       ]
     }]
   }, {
