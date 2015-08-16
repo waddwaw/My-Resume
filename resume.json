@@ -68,18 +68,18 @@
   }],
   "experience": [{
     "type": "internship",
-    "techtype": "nodejs",
-    "place": "东西科技",
-    "start": "2014.03",
-    "end": "2014.06",
-    "name": "Node.js 开发",
+    "techtype": "frontend",
+    "place": "阿里巴巴 B2B-ICBU 数据应用部",
+    "start": "2015.07",
+    "end": "至今",
+    "name": "前端开发",
     "description": [
-      "开发并维护封装微信公众平台 API 的 `Express 中间件`",
-      "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
-      "结合 `MongoDB` 开发微信公众平台 Demo",
-      "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
+      "开发支持 i18n 的数据可视化组件",
+      "解决外部系统遗留的 bug 及浏览器兼容问题（`IE7+`）",
+      "使用 `SVG` 等技术开发内部系统数据可视化图表"
     ],
-    "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
+    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+    "compatibility": "IE8+"
   }, {
     "type": "internship",
     "techtype": "frontend",
@@ -96,20 +96,19 @@
     "compatibility": "IE8+"
   }, {
     "type": "internship",
-    "techtype": "frontend",
-    "place": "阿里巴巴 B2B-ICBU 数据应用部",
-    "start": "2015.07",
-    "end": "至今",
-    "name": "前端开发",
+    "techtype": "nodejs",
+    "place": "东西科技",
+    "start": "2014.03",
+    "end": "2014.06",
+    "name": "Node.js 开发",
     "description": [
-      "开发支持 i18n 的数据可视化组件",
-      "解决外部系统遗留的 bug 及浏览器兼容问题（`IE7+`）",
-      "使用 `SVG` 等技术开发内部系统前端组件"
+      "开发并维护封装微信公众平台 API 的 `Express 中间件`",
+      "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
+      "结合 `MongoDB` 开发微信公众平台 Demo",
+      "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
     ],
-    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
-    "compatibility": "IE8+"
-  },
-  {
+    "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
+  }, {
     "type": "project",
     "techtype": "frontend",
     "project_type": "personal",
@@ -196,7 +195,7 @@
     }, {
       "summary": "其他",
       "description": [
-        "使用 `Tornado`（`Python`） 搭建过简单的服务器",
+        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
         "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
         "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
       ]
