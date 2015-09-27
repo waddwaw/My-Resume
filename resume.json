@@ -53,11 +53,11 @@
     "type": "english",
     "certificate": [{
       "type": "CET-4",
-      "full": "750",
+      "full": "710",
       "score": "679"
     }, {
       "type": "CET-6",
-      "full": "750",
+      "full": "710",
       "score": "616"
     }],
     "description": [
@@ -130,8 +130,8 @@
     "source": "https://github.com/joyeecheung/diary",
     "demo": "http://joyeecheung.github.io/diary/",
     "description": [
-      "一个技术日记站点生成器，可从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
-      "以 `CSS4` 编写样式，用 `PostCSS` 转译到 CSS3",
+      "一个技术日记站点生成器，从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
+      "通过 `PostCSS` 将依照实验性 CSS 标准编写的代码转译使用",
       "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
       "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
     ],
@@ -188,9 +188,9 @@
     "item": [{
       "summary": "`Node.js`",
       "description": [
-        "能够使用 `Node.js API` 或 `Express` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
+        "能够使用 `Node.js API` / `Express` / `Koa` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
         "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-        "能编写简单的 `Express / Connect 中间件`，使用 `Mocha` 与 `Chai` 编写单元测试"
+        "能编写简单的 `Express` / `Connect` / `Koa` 中间件，使用 `Mocha` 与 `Chai` 编写单元测试"
       ]
     }, {
       "summary": "其他",
