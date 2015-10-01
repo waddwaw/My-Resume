@@ -16,11 +16,8 @@ block header
       h2= job_description.join("/")
     address
       ul.contact
-        +phone(contact.phone)
-        +email(contact.email)
-        +github(contact.github)
-        +blog(contact.blog)
-        +sinaweibo(contact.sinaweibo)
+        each item, key in contact
+          +#{key}(item)
         +responsive("wechat", contact.wechat, "visible-lt-sm invisible-print")
 
 block content
