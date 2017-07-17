@@ -14,6 +14,15 @@ block education
             dd.education-honor!= highlight(honor)
 
 
+block language
+  +section("language", false)
+    each lang in language
+      +certificate(lang.certificate)
+      ul.language-description
+        each desc in lang.description
+          li.language-desc-item= desc
+
+
 block experience
   +section("experience", true)
     each item in experience

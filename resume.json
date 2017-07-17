@@ -1,123 +1,176 @@
 {
   "data_lang": "zh-CN",
   "ga_id": "UA-63818301-2",
-  "resume_title": "张秋怡 - 个人简历",
-  "name": "张秋怡",
-  "repo": "https://github.com/joyeecheung/resume.git",
-  "job_description": ["前端工程师", "软件工程师"],
+  "resume_title": "李立强 - 个人简历",
+  "name": "李立强",
+  "repo": "https://github.com/waddwaw/resume.git",
+  "job_description": ["Android工程师", "软件工程师"],
   "contact": {
-    "email": "joyeec9h3@gmail.com",
+    "email": "waddwaw@qq.com",
     "wechat": {
-      "id": "joyee-cheung",
-      "qrcode": "static/wechat.svg"
+      "id": "liliqiang999",
+      "qrcode": "static/wechat.jpg"
     },
     "sinaweibo": {
-      "id": "SYSU_Joyee",
-      "url": "http://weibo.com/2930876843"
+      "id": "零交集_",
+      "url": "http://weibo.com/2261576775/"
     },
     "github": {
-      "id": "joyeecheung"
+      "id": "waddwaw"
     },
     "blog": {
-      "url": "http://joyeecheung.cnblogs.com"
+      "url": "http://waddwaw.github.io/"
     }
   },
   "links": [{
     "type": "repo",
-    "url": "https://github.com/joyeecheung/resume"
+    "url": "https://github.com/waddwaw/resume.git"
 
   }, {
     "type": "pdf",
-    "url": "static/joyeecheung.pdf"
-
-  }, {
-    "type": "zhihu",
-    "url": "http://www.zhihu.com/people/zhang-qiu-yi-27/"
-  }, {
-    "type": "doubanbook",
-    "url": "http://book.douban.com/people/joyee-cheung/"
+    "url": "static/waddwaw.pdf"
   }],
   "education": [{
     "type": "undergraduate",
-    "name": "中山大学",
+    "name": "长沙民政学院",
     "major": "软件工程",
-    "start": "2012",
+    "start": "2013",
     "end": "2016",
     "honor": [
-      "2012 - 2013 学年度校**三等奖学金**",
-      "2013 - 2014 学年度校**一等奖学金**"
+      "2014 - 2015 国家**一等奖学金**",
+      "2015 - 2016 国家**一等奖学金**",
+	  "2015 - 2016 校级**校级三好学生**",
+	  "2014 - 2015 国家**全国职业技能大赛移动互联网开发二等奖**"
     ]
   }],
   "language": [{
     "type": "english",
-    "certificate": [{
-      "type": "CET-4",
-      "full": "710",
-      "score": "679"
-    }, {
-      "type": "CET-6",
-      "full": "710",
-      "score": "616"
-    }],
+    "certificate": [],
     "description": [
-      "能流畅阅读英文专业书籍、文档及其他资料",
-      "可无字幕观看 MOOC 课程、开发者大会视频",
-      "能够在英文邮件列表、Stack Overflow 等社区正常交流"
     ]
   }],
   "experience": [{
     "type": "internship",
     "techtype": "frontend",
-    "place": "阿里巴巴 B2B-ICBU 数据应用部",
-    "start": "2015.07",
+    "place": "北京千锋互联有限公司深圳分公司",
+    "start": "2016.06",
     "end": "至今",
-    "name": "前端开发",
+    "name": "Android讲师",
     "description": [
-      "开发支持 i18n 的数据可视化组件",
-      "解决外部系统遗留的 bug 及浏览器兼容问题（`IE7+`）",
-      "使用 `SVG` 等技术开发内部系统数据可视化图表"
+      "使用分屏、投影 对学生进行授课",
+      "授课内容 Android项目部分 、第三方SDK使用 、环信 、百度地 图、GitHub、Postman、Android mvvm （data binding）、实战项目",
+	  "开发环境 Windows Android Studio 1.4 - 2.1"
+    ],
+    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+    "compatibility": "IE8+"
+  },{
+    "type": "internship",
+    "techtype": "frontend",
+    "place": "深圳雪莲花网络有限公司",
+    "start": "2015.07",
+    "end": "2016.06",
+    "name": "Android开发",
+    "description": [
+      "负责开发公司相应项目（开发，维护，重构）",
+      "技术领域 Android 、JAVA 、Spring 4.0 、JPA、angularjs、Git、Android mvvm （data binding）",
+	  "开发环境 Windows Android Studio 1.4 - 2.0"
     ],
     "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
     "compatibility": "IE8+"
   }, {
     "type": "internship",
     "techtype": "frontend",
-    "place": "埃森哲广州 CDC",
-    "start": "2014.08",
-    "end": "2014.09",
-    "name": "前端开发",
+    "place": "搜空集团",
+    "start": "2015.06",
+    "end": "2015.09",
+    "name": "Android 开发",
     "description": [
-      "参与某集团内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
-      "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
-      "使用 `Grunt` 及 `Less` 完成皮肤开发"
+      "负责独立开发搜空云厨Android项目",
+      "技术领域 Android",
+      "开发环境 Windows MAC Eclipse ADT 23.6"
     ],
     "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
     "compatibility": "IE8+"
   }, {
     "type": "internship",
     "techtype": "nodejs",
-    "place": "东西科技",
-    "start": "2014.03",
-    "end": "2014.06",
-    "name": "Node.js 开发",
+    "place": "北京铁路局信息技术处",
+    "start": "2011.03",
+    "end": "2013.03",
+    "name": "DELL 硬件维工程师",
     "description": [
-      "开发并维护封装微信公众平台 API 的 `Express 中间件`",
-      "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
-      "结合 `MongoDB` 开发微信公众平台 Demo",
-      "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
+      "上门过去帮助客户解决问题，服务对象DELL全线产品，偏向硬件方面的工作。"
     ],
     "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
+  },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "今日献血 服务端",
+    "description": [
+      "今日献血，社会化分享平台，集成推送，献血导航，血检查询，组团献血，爱心墙，健康自检",
+      "负责开发Android 、 IOS 、和打表机，照片墙 ，接口开发，同时负责后台管理系统的开发，使用angular、JPA、Spring 4.0 ，同时负责对接微信页面数据处理。",
+	  "主要技术 Spring 4.0 、jpa、Angular js"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "今日献血",
+    "description": [
+      "无偿献血社会化平台。献血新闻模块，预约献血模块，志愿者模块，献血广场模块，献血登记表功能。",
+      "进行屏幕适配、网络采用okhttp、图片加载采用glide实现滑动图片停止加载 优化内存、MVVM(databinding)、优化解决各种滑动冲突问题。"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
   }, {
     "type": "project",
     "techtype": "frontend",
-    "project_type": "personal",
-    "name": "Resume",
-    "source": "https://github.com/joyeecheung/resume",
-    "demo": "http://joyeecheung.github.io/resume/",
+    "project_type": "company",
+    "name": "大樊",
+    "demo": "http://www.dafan.info/",
     "description": [
-      "这份在线简历的生成器",
-      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成**响应式**样式",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+      "大樊精品佛学文化平台，应用集成视频、音乐播放，文章、书记浏览，热点动态。",
+      "并有IOS Android 和Android TV 三个版本，目前此项目属于维护阶段。"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  }, {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "搜空云厨",
+    "demo": "http://www.soonking.com/business/catering.html",
+    "description": [
+      "搜空云厨项目，主要实现下线点菜，应用打开获取服务器数据，把数据存入本地数据库。",
+      "自动生产桌号，菜品分类，菜品名称，点菜成功后将菜品进行服务器提交，后台服务器进行下单，同时实现在线支付，收银管理，修改订单，复制订单，支持离线点菜，属于互联网+产品。",
+	  "产品已在湖南益阳地区投入使用。"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "18TV",
+    "description": [
+      "个人项目，实现视频直播技术",
+      "打开app可以通过自己的服务器获取最新服务器提供的直播源节目，服务器可以进行随意控制直播内容，也可以根据用户会员等级进行直播内容的相关限定，项目打算近期上线",
+      "使用技术服务器方面 linux + nodejs + mysql ，客户端方面 Android 4.0 -6.0 主要技术 ：ijkplayer "
+    ],
+    "stack": ["jade", "less", "gulp"],
+    "compatibility": "IE9+"
+  },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "personal",
+    "name": "Wifi 小车",
+    "description": [
+      "使用模块 Arduino R3 + esp8266 + L298n ",
+      "小车能够独立建立wifi 热点，Android端连入wifi即可对小车进行前后左右控制。",
+      "有效连接距离70米，最多同时连入4个客服端。主要技术，Socket通信，esp8266 模块驱动，L298n 模块驱动。"
     ],
     "stack": ["jade", "less", "gulp"],
     "compatibility": "IE9+"
@@ -125,61 +178,64 @@
     "type": "project",
     "techtype": "frontend",
     "project_type": "personal",
-    "name": "My Tech Diary",
-    "source": "https://github.com/joyeecheung/diary",
-    "demo": "http://joyeecheung.github.io/diary/",
+    "name": "有房项目API",
+    "source": "http://120.27.33.15/",
+    "demo": "http://120.27.33.15/",
     "description": [
-      "一个技术日记站点生成器，从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
-      "通过 `PostCSS` 将依照实验性 CSS 标准编写的代码转译使用",
-      "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+      "源码和DEMO 暂未公开",
+      "项目使用node.js express rest 开发，负责对Android 端 和IOS 端 提供服务，数据通信主要是用JSON ，图片，音频上传使用Base64格式进行上传，服务器端使用node.js 进行解析转存，数据库采用Mysql。",
+      "服务器环境：阿里云、1G、ubuntu14.04、pm2、node5.9。",
+      "环境能承受至少5000并发访问没有问题。（阿里云性能测试），后期将加入Nginx、Redis"
     ],
     "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
     "compatibility": "IE9+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "personal",
-    "name": "Virtual Bookcase",
-    "source": "https://github.com/joyeecheung/virtual-bookcase",
-    "description": [
-      "基于 `Three.js` 实现的 3D 虚拟图书室",
-      "使用 `Express` 与 `MongoDB` 提供图书数据 API",
-      "使用 `RequireJS` 加载模块，`Grunt` 驱动工作流，`Web Worker` 优化图像处理"
-    ],
-    "stack": ["three.js", "mongodb", "express"],
-    "compatibility": "IE10+"
   }],
   "skills": [{
+    "type": "android",
+    "item": [{
+      "summary": "`JAVA`",
+      "description": [
+        "有良好的JAVA基础，熟练掌握面向对象思想。",
+        "能够使用JAVA开发后台接口"
+      ]
+    }, {
+      "summary": "`Android`",
+      "description": [
+        "Android5.0 Material Design新增控件RecyclerView,CardView,CoordinatorLayout等",
+        "Android网络应用开发，熟练使用HttpURLConnection, HttpClient,以及 okHttp,android-async-http，等常用框架请求网络。",
+        "xml，json解析与封装，熟练使用Gson, xstream等框架。",
+		"View 和ViewGroup的事件分发机制,解决过viewPager嵌套的滑动冲突问题。",
+		"常用设计模式，如单列模式、工厂模式、适配模式和MVC模式等。",
+		"常见第三方功能整合，如分享、推送、支付，第三方登录和二维码扫描等。",
+		"Android MVVM(google data binding)",
+		"Android 性能优化、屏幕适配、疑难问题解决"
+		
+      ]
+    }, {
+      "summary": "其他",
+      "description": [
+        "自学兴趣高，经常逛Google 了解最新知识",
+        "关注知名Android大神、张鸿洋、郭霖、等",
+        "周围同学朋友做Android开发较多"
+      ]
+    }]},{
     "type": "frontend",
     "item": [{
       "summary": "`HTML` / `CSS`",
       "description": [
-        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画",
-        "熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准"
+        "能够看懂HTML",
+        "得到静态页面可以和API进行数据对接"
       ]
     }, {
-      "summary": "`ECMAScript`（`JavaScript`）",
+      "summary": "`JavaScript`",
       "description": [
-        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`及相关 JIT 技术有一定的了解",
-        "了解 `ECMAScript` 新标准与相关后处理工具并能在项目中使用"
+        "了解 javaScript"
       ]
     }, {
-      "summary": "`DOM` / `BOM` 及常见 `Web API`",
+      "summary": "`Angularjs`",
       "description": [
-        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），有桌面 / 移动端前端组件的开发经验",
-        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` / `SVG` 等 API 有一定的使用经验",
-        "阅读过 `WebKit` / `Blink` 源码中的部分实现，了解常见的 Web API **兼容性**问题及其解决方案"
-      ]
-    }, {
-      "summary": "前端工程实践",
-      "description": [
-        "使用 `Meteor` / `AngularJS` / `Polymer` 编写过简单的 CRUD SPA，了解 `Backbone.js` / `React` 及前端 `MV*` 模型",
-        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码",
-        "在项目中使用过 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 等多种模块化解决方案",
-        "在项目中使用过 `Less` / `Sass` / `PostCSS` / `CoffeeScript` / `TypeScript` 等预处理/后处理工具",
-        "日常使用 `Grunt` 或 `Gulp` 改进工作流",
-        "掌握基本的前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践"
+        "了解angularjs",
+        "在上线项目使用angularjs渲染页面数据"
       ]
     }]
   }, {
@@ -187,28 +243,37 @@
     "item": [{
       "summary": "`Node.js`",
       "description": [
-        "能够使用 `Node.js API` / `Express` / `Koa` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
+        "能够使用 `Express` 搭建简单的后端程序与数据库交互、渲染模板及提供 `API`",
         "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-        "能编写简单的 `Express` / `Connect` / `Koa` 中间件，使用 `Mocha` 与 `Chai` 编写单元测试"
+		"使用 Linux pm2 部署项目"
+
+      ]
+    }, {
+      "summary": "JAVA",
+      "description": [
+        "使用 `Spring MVC` 、`Spring Boot`、`JPA` 搭建过简单的服务器、熟练使用IDEA进行开发",
+        "有使用  `MySQL` 数据库，`nginx` 反向代理的经验",
+        "了解 `HTTP`、 `TCP/IP`、 `Socket` 等协议"
       ]
     }, {
       "summary": "其他",
       "description": [
-        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
-        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
+        "学习过 `Python`  ",
+        "有使用  `MySQL` 数据库，`nginx` 反向代理的经验",
+        "了解 `HTTP`、 `TCP/IP`、 `WebSocket` 等协议",
+		"搭建过GitLab、TomCat、VPN"
       ]
-    }]
-  }, {
+    }]}
+  , {
     "type": "miscellaneous",
     "item": [
-      "三年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
-      "熟悉多种平台与编译环境下的 `C` / `C++` 及其新标准，编写过简单的解释器、数据库引擎、3D 图形程序及 Node.js 扩展，能阅读 `WebKit` / `Blink、V8` 等常接触项目的源代码并加以利用",
-      "熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本、爬虫、机器学习算法及分布式程序（参见 GitHub）",
-      "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
-      "能够使用 `LaTeX` 及 `Markdown` 编写得体的中英文文档或论文，具备良好的技术交流能力",
-      "日常使用 `Git` 与 `Sublime Text` / `Vim` 进行开发，也乐于尝试新工具",
-      "能够使用 `Photoshop` / `Illustrator` 完成简单的设计"
+      "有 `Linux` 使用经验，熟悉常用命令与配置",
+      "了解 `Python`，能实现简单的自动化脚本、爬虫",
+      "具备基本的 `Web 安全`知识",
+      "日常使用 `Git` 与 `Sublime Text` / `Notepad++` 进行开发，也乐于尝试新工具",
+      "能够使用 `Photoshop` 完成简单的设计",
+	  "能够进行简单的影视剪辑特效处理（模板大法好）",
+	  "有自学热情、善于攻克疑难杂症、能独立解决问题、夜跑族、业余马拉松、 Coding 之路注定是痛苦的，少不了 BUG 和崩溃， 我就是万里无云，为晴空奋斗一辈子！"
     ]
   }]
 }
