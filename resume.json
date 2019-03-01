@@ -4,22 +4,23 @@
   "resume_title": "李立强 - 个人简历",
   "name": "李立强",
   "repo": "https://github.com/waddwaw/resume.git",
-  "job_description": ["Android工程师", "软件工程师"],
+  "job_description": ["JAVA高级", "GO(业余)"],
   "contact": {
+    "phone":"13113656554",
     "email": "waddwaw@qq.com",
     "wechat": {
       "id": "liliqiang999",
       "qrcode": "static/wechat.jpg"
     },
     "sinaweibo": {
-      "id": "零交集_",
-      "url": "http://weibo.com/2261576775/"
+      "id": "等待",
+      "url": "https://weibo.com/2261576775/"
     },
     "github": {
       "id": "waddwaw"
     },
     "blog": {
-      "url": "http://waddwaw.github.io/"
+      "url": "https://www.yoflying.com"
     }
   },
   "links": [{
@@ -52,57 +53,96 @@
   "experience": [{
     "type": "internship",
     "techtype": "frontend",
-    "place": "北京千锋互联有限公司深圳分公司",
-    "start": "2016.06",
-    "end": "至今",
-    "name": "Android讲师",
+    "place": "北京健康护航科技有限公司",
+    "start": "2018.1",
+    "end": "2019.2",
+    "name": "JAVA高级",
     "description": [
-      "使用分屏、投影 对学生进行授课",
-      "授课内容 Android项目部分 、第三方SDK使用 、环信 、百度地 图、GitHub、Postman、Android mvvm （data binding）、实战项目",
-	  "开发环境 Windows Android Studio 1.4 - 2.1"
+      "北京健康护航科技有限公司主要做在线课程、在线教育、护士上门、职称考试、健康管理",
+      "负责开发项目、老项目维护、老项目重构、负责健康产业学堂的框架搭建、开发、支付对接、微信公众平台开发、小程序开发"
     ],
-    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
+    "stack": [],
     "compatibility": "IE8+"
   },{
     "type": "internship",
     "techtype": "frontend",
-    "place": "深圳雪莲花网络有限公司",
+    "place": "广田集团-广田智能科技有限公司",
+    "start": "2016.08",
+    "end": "2018.10",
+    "name": "JAVA",
+    "description": [
+      "国内智能家居领军品牌图灵猫，智能家居，智能设备，让家更懂你",
+      "负责图灵猫旗舰中控中控和手机端的SDK协议、网络协议封装，提供本地射频数据、云端网络数据、局域网数据的分发和各种业务的处理",
+      "负责图灵猫社区服务器的基础框架搭建，服务器使用 Netty 开发，设计同时实现用户并发操作设备。社区服务器主要给用户提供呼叫电梯、打开门禁锁、呼叫保安和物业系统对接"
+    ],
+    "stack": [],
+    "compatibility": "IE8+"
+  }, {
+    "type": "internship",
+    "techtype": "frontend",
+    "place": "深圳雪莲花网络有限公司(实习)",
     "start": "2015.07",
-    "end": "2016.06",
-    "name": "Android开发",
+    "end": "2016.05",
+    "name": "Android",
     "description": [
-      "负责开发公司相应项目（开发，维护，重构）",
-      "技术领域 Android 、JAVA 、Spring 4.0 、JPA、angularjs、Git、Android mvvm （data binding）",
-	  "开发环境 Windows Android Studio 1.4 - 2.0"
+      "负责今日献血APP研发、微信工作平台统一后台管理页面开发、运营管理后台开发"
     ],
-    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
-    "compatibility": "IE8+"
-  }, {
-    "type": "internship",
-    "techtype": "frontend",
-    "place": "搜空集团",
-    "start": "2015.06",
-    "end": "2015.09",
-    "name": "Android 开发",
-    "description": [
-      "负责独立开发搜空云厨Android项目",
-      "技术领域 Android",
-      "开发环境 Windows MAC Eclipse ADT 23.6"
-    ],
-    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
-    "compatibility": "IE8+"
-  }, {
-    "type": "internship",
-    "techtype": "nodejs",
-    "place": "北京铁路局信息技术处",
-    "start": "2011.03",
-    "end": "2013.03",
-    "name": "DELL 硬件维工程师",
-    "description": [
-      "上门过去帮助客户解决问题，服务对象DELL全线产品，偏向硬件方面的工作。"
-    ],
-    "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
+    "stack": []
   },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "护士加微信运营",
+    "description": [
+      "负责对微信商城/运营/支付系统基础架构编写、微信支付功能集成",
+      "完成微信公众平台开发，实现微信打开自动登录，页面二级、三级分享、一级用户实时查看二三级用户购买查看页面情况",
+      "实现微信支付后对订单自动派发",
+      "使用到的技术，Linux、Nginx、Spring boot、Dubbo、Redis、https、Mybatis、zookeeper、Mongo"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  },
+  {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "健康产业学堂",
+    "description": [
+      "大型机构入驻式学习平台，拥有总运营管理系统，机构运营管理系统，微信小程序，微信公众号，pc web版本，主要服务人群白衣天使",
+      "在此项目中担任架构负责人，负责项目服务器架构设计，保证服务器分布式情况稳定运行，面向接口编程，相关业务解耦",
+      "项目从零开始，结合公司实际情况，最终我采用了Apache Dubbo远分布式框架进行搭建",
+      "使用到的技术，Linux、Nginx、Spring boot、Dubbo、Redis、https、Mybatis、zookeeper、Mongo、MQ队列、简单分布式锁"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "小姨妹",
+    "description": [
+      "这是一款和大姨妈平台类似的app应用，有文章模块，经期记录模块，小姨妹商城模块，消息推送模块，优惠券模块",
+      "我在此项目中担任项目总负责人，同时负责项目服务器架构设计，采用token统一单点登录认证机制",
+      "此项目学习到了大量项目经验，也是我的处女项目，项目成功开发并进行上线",
+      "此项目学习到了大量项目经验，也是我的处女项目，项目成功开发并进行上线",
+      "使用到的技术，Linux、Nginx、Apache Tomcat、Mysql、Redis、https ipv6、Spring mvc、Spring 4.0 +、Shiro、Mybatis、Jpa、接口加密防止cc攻击",
+      "使用到第三方平台、聚合短信、聚合实名认证、微信支付、微信分享、微信企业退款、支付宝支付、腾讯bugly、个推推送 、七牛cdn存储"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  },{
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "company",
+    "name": "图灵猫项目",
+    "description": [
+      "图灵猫中控SDK层，主要使用JAVA 进行逻辑的处理、信号控制，网络长连接保持（TCP、UDP、射频）、设备添加与删除、中控中继组网、NFC数据读写操作、智能设备的联动",
+      "图灵猫只能社区服务器，我主要负责底层Netty框架搭建，同时负责Spring boot Web层的业务逻辑处理,和一些协议的对接"
+    ],
+    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
+    "compatibility": "IE9+"
+  },
+  {
     "type": "project",
     "techtype": "frontend",
     "project_type": "company",
@@ -118,31 +158,7 @@
     "type": "project",
     "techtype": "frontend",
     "project_type": "company",
-    "name": "今日献血",
-    "description": [
-      "无偿献血社会化平台。献血新闻模块，预约献血模块，志愿者模块，献血广场模块，献血登记表功能。",
-      "进行屏幕适配、网络采用okhttp、图片加载采用glide实现滑动图片停止加载 优化内存、MVVM(databinding)、优化解决各种滑动冲突问题。"
-    ],
-    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
-    "compatibility": "IE9+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "company",
-    "name": "大樊",
-    "demo": "http://www.dafan.info/",
-    "description": [
-      "大樊精品佛学文化平台，应用集成视频、音乐播放，文章、书记浏览，热点动态。",
-      "并有IOS Android 和Android TV 三个版本，目前此项目属于维护阶段。"
-    ],
-    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
-    "compatibility": "IE9+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "company",
     "name": "搜空云厨",
-    "demo": "http://www.soonking.com/business/catering.html",
     "description": [
       "搜空云厨项目，主要实现下线点菜，应用打开获取服务器数据，把数据存入本地数据库。",
       "自动生产桌号，菜品分类，菜品名称，点菜成功后将菜品进行服务器提交，后台服务器进行下单，同时实现在线支付，收银管理，修改订单，复制订单，支持离线点菜，属于互联网+产品。",
@@ -179,10 +195,7 @@
     "techtype": "frontend",
     "project_type": "personal",
     "name": "有房项目API",
-    "source": "http://120.27.33.15/",
-    "demo": "http://120.27.33.15/",
     "description": [
-      "源码和DEMO 暂未公开",
       "项目使用node.js express rest 开发，负责对Android 端 和IOS 端 提供服务，数据通信主要是用JSON ，图片，音频上传使用Base64格式进行上传，服务器端使用node.js 进行解析转存，数据库采用Mysql。",
       "服务器环境：阿里云、1G、ubuntu14.04、pm2、node5.9。",
       "环境能承受至少5000并发访问没有问题。（阿里云性能测试），后期将加入Nginx、Redis"
@@ -191,89 +204,51 @@
     "compatibility": "IE9+"
   }],
   "skills": [{
-    "type": "android",
+    "type": "backend",
     "item": [{
       "summary": "`JAVA`",
       "description": [
-        "有良好的JAVA基础，熟练掌握面向对象思想。",
-        "能够使用JAVA开发后台接口"
+        "使用 Zookeeper、Dubbo、Mongo、Redis、Shiro、MyBatis、Spring、Netty、Druid、Nginx、Mysql、RabbitMQ、Memcache",
+        "Netty 搭建及时通讯 UDP/TCP 服务器",
+        "Spring boot、shell 脚本打包",
+        "Maven 项目搭建",
+        "了解 spring cloud、spring cloud alibaba",
+        "嵌入式设备数据对接",
+        "熟悉对接三方接口、阿里巴巴、微信、有赞、第三方登陆等",
+        "数据加密方案、数据上报收集方案",
+        "Linux 基础环境搭建、部署(Mysql/Nginx/Redis/Zookeeper/Mongo/Gitlab/Jenkins/Shadowsocks/VPN/Tomcat)",
+        "有使用阿里云，谷歌云服务器的实战经验"
       ]
     }, {
-      "summary": "`Android`",
+      "summary": "Android(业余)",
       "description": [
         "Android5.0 Material Design新增控件RecyclerView,CardView,CoordinatorLayout等",
         "Android网络应用开发，熟练使用HttpURLConnection, HttpClient,以及 okHttp,android-async-http，等常用框架请求网络。",
         "xml，json解析与封装，熟练使用Gson, xstream等框架。",
-		"View 和ViewGroup的事件分发机制,解决过viewPager嵌套的滑动冲突问题。",
-		"常用设计模式，如单列模式、工厂模式、适配模式和MVC模式等。",
-		"常见第三方功能整合，如分享、推送、支付，第三方登录和二维码扫描等。",
-		"Android MVVM(google data binding)",
-		"Android 性能优化、屏幕适配、疑难问题解决"
-		
+        "View 和ViewGroup的事件分发机制,解决过viewPager嵌套的滑动冲突问题",
+        "常用设计模式，如单列模式、工厂模式、适配模式和观察者模式等",
+        "常见第三方功能整合，如分享、推送、支付，第三方登录和二维码扫描等",
+        "Android 性能优化、屏幕适配、疑难问题解决"
       ]
     }, {
-      "summary": "其他",
+      "summary": "GO",
       "description": [
-        "自学兴趣高，经常逛Google 了解最新知识",
-        "关注知名Android大神、张鸿洋、郭霖、等",
-        "周围同学朋友做Android开发较多"
-      ]
-    }]},{
-    "type": "frontend",
-    "item": [{
-      "summary": "`HTML` / `CSS`",
-      "description": [
-        "能够看懂HTML",
-        "得到静态页面可以和API进行数据对接"
-      ]
-    }, {
-      "summary": "`JavaScript`",
-      "description": [
-        "了解 javaScript"
-      ]
-    }, {
-      "summary": "`Angularjs`",
-      "description": [
-        "了解angularjs",
-        "在上线项目使用angularjs渲染页面数据"
-      ]
-    }]
-  }, {
-    "type": "backend",
-    "item": [{
-      "summary": "`Node.js`",
-      "description": [
-        "能够使用 `Express` 搭建简单的后端程序与数据库交互、渲染模板及提供 `API`",
-        "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-		"使用 Linux pm2 部署项目"
-
-      ]
-    }, {
-      "summary": "JAVA",
-      "description": [
-        "使用 `Spring MVC` 、`Spring Boot`、`JPA` 搭建过简单的服务器、熟练使用IDEA进行开发",
-        "有使用  `MySQL` 数据库，`nginx` 反向代理的经验",
-        "了解 `HTTP`、 `TCP/IP`、 `Socket` 等协议"
-      ]
-    }, {
-      "summary": "其他",
-      "description": [
-        "学习过 `Python`  ",
-        "有使用  `MySQL` 数据库，`nginx` 反向代理的经验",
-        "了解 `HTTP`、 `TCP/IP`、 `WebSocket` 等协议",
-		"搭建过GitLab、TomCat、VPN"
+        "学习过 GoLang、Python、PHP，能够快速上手其他语言项目",
+        "学习过Gin、Beego、Martini等 GO 语言框架",
+        "阅读过Go语言编程、Go Web编程"
       ]
     }]}
   , {
     "type": "miscellaneous",
     "item": [
-      "有 `Linux` 使用经验，熟悉常用命令与配置",
-      "了解 `Python`，能实现简单的自动化脚本、爬虫",
-      "具备基本的 `Web 安全`知识",
-      "日常使用 `Git` 与 `Sublime Text` / `Notepad++` 进行开发，也乐于尝试新工具",
-      "能够使用 `Photoshop` 完成简单的设计",
-	  "能够进行简单的影视剪辑特效处理（模板大法好）",
-	  "有自学热情、善于攻克疑难杂症、能独立解决问题、夜跑族、业余马拉松、 Coding 之路注定是痛苦的，少不了 BUG 和崩溃， 我就是万里无云，为晴空奋斗一辈子！"
+      "个人能力和工作年限没有直接关系,开发看的是思想和逻辑，没有很好的思维逻辑也就不要谈论开发了.",
+      "熟练使用 Mac、Linux、windows，平台进行相关项目开发工作",
+      "项目管理大学就开始自己带团队并取的全国级比赛团队二等奖，到现在已经有n+1独立带队乐于分享在北京千峰教育兼职过为期三个月的 Android项目 讲师日常使用 `Git` 与 `Sublime Text` / `Notepad++` 进行开发，也乐于尝试新工具",
+      "Linux 使用经验，部署相应生产环境 and 测试环境",
+	    "了解 Python，能实现简单的自动化脚本、爬虫、具备基本的 Web 安全知识",
+	    "日常使用 Git 与 Sublime Text / Notepad++ 进行开发，也乐于尝试新工具",
+      "有自学热情、善于攻克疑难杂症、能独立解决问题、夜跑族、业余马拉松、 Coding 之路注定是痛苦的，少不了 BUG 和崩溃。(!不一定) > 一定 > DJ"
+
     ]
   }]
 }
